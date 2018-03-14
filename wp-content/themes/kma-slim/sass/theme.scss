@@ -1,0 +1,750 @@
+// Theme Specific Styles
+
+// Full page Layout
+html {
+  height: 100%;
+}
+
+body {
+  height: auto !important;
+  min-height: 100%;
+  overflow-x: initial;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+
+  #MobileNavMenu {
+    width: 100%;
+    min-height: 100vh;
+    left: 100%;
+    right: -100%;
+    top: 0;
+    z-index: 3;
+    position: fixed;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.2em;
+    transition: font-size .25s;
+    @media screen and (min-width: 370px) {
+      width: 100%;
+      right: -100%;
+    }
+
+    a.menu-item.navbar-item {
+      line-height: 1.9em;
+    }
+
+    div#MobileNavClose {
+      align-items: center;
+      display: flex;
+      font-size: .8em;
+      margin: 1.5rem 0 .5rem;
+    }
+
+  }
+  #MobileNavMenu.is-active {
+    width: 100%;
+    left: auto;
+    right: 0;
+    position: relative;
+    background-color: $primary;
+    font-size: 1.6em;
+    @media screen and (min-width: 370px) {
+      width: 100%;
+    }
+
+    .nav-wrapper {
+      min-height: 100vh;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+    }
+    #mobile-menu {
+      width: 100%;
+      .navbar-item {
+        padding: 0;
+        color: $white;
+        .navbar-dropdown {
+          font-size: 1.2rem;
+          padding-bottom: 0.5rem;
+          padding-top: 0.25rem;
+          transition: height .5s;
+          height: 0;
+          display: none;
+        }
+      }
+      .navbar-item {
+        .navbar-dropdown.is-open {
+          height: auto;
+          display: block;
+        }
+      }
+      a.navbar-item.is-active, .navbar-link.is-active {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a.navbar-item:hover, .navbar-link:hover {
+        background-color: transparent;
+      }
+    }
+  }
+  .site-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+  }
+  .site-wrapper.menu-open {
+    display: none;
+  }
+  .site-wrapper.full-height {
+    height: 100vh;
+  }
+
+  .button {
+    font-family: "tandelle";
+  }
+}
+
+//Sticky Header
+#top {
+  width: 100%;
+  position: relative;
+  z-index: 3;
+  transition: all linear .25s;
+
+  @media screen and (max-width: $desktop) {
+    width: 100%;
+    text-align: center;
+
+    .navbar-start {
+      padding: 1rem 0 0;
+    }
+
+  }
+  @media screen and (min-width: $desktop) {
+    position: fixed;
+  }
+
+  #MobileNavBurger {
+    border-radius: 0;
+    height: 28px !important;
+    width: 32px;
+    padding: 0 !important;
+
+    @media screen and (min-width: $widescreen) {
+      display: none;
+    }
+
+    .navbar-burger {
+      cursor: pointer;
+      display: block;
+      position: relative;
+      background-color: transparent !important;
+
+      span {
+        background-color: $primary !important;
+      }
+    }
+  }
+
+  #MobileNavBurger:hover,
+  #MobileNavBurger:focus {
+    .navbar-burger {
+      span {
+        background-color: $black !important;
+      }
+    }
+  }
+
+  .top-one {
+    background: #202221;
+    align-items: center;
+
+    .navbar {
+      justify-content: flex-end;
+    }
+
+    .navbar-item {
+      a {
+        color: #D2CAB0;
+      }
+    }
+
+    .top-phone {
+      .icon {
+        margin: 0 .25rem 0 .5rem;
+        .fa {
+          font-size: 25px;
+        }
+      }
+      a {
+        color: #c5ad5f;
+      }
+    }
+  }
+
+  .navbar {
+    background-color: transparent;
+    min-height: 100%;
+    display: flex;
+    align-items: flex-start;
+
+    .navbar-brand {
+      min-height: 100%;
+      transition: all linear .5s;
+      overflow: visible;
+
+      .logo {
+        transition: max-width linear .5s;
+        display: block;
+        margin-top: -53px;
+        width: 125px;
+        @media screen and (min-width: $desktop) {
+          width: 215px;
+        }
+      }
+    }
+
+    .navbar-item {
+      padding: 0 .5rem;
+      img {
+        max-height: 2.75rem;
+      }
+      a.menu-item {
+        font-size: 2.3em;
+        font-weight: $weight-normal;
+        font-family: "tandelle";
+        text-transform: uppercase;
+        color: #D2CAB0;
+      }
+
+      .navbar-link::after {
+        content: "";
+        display: none;
+      }
+
+      .social {
+        height: 2.1rem;
+        svg {
+          width: 28px;
+          margin: 0 .15rem;
+        }
+
+      }
+
+    }
+
+    .navbar-item a.menu-item:hover, a.current_page_item,
+    .navbar-item a.navbar-link.is-active,
+    .navbar-item.has-dropdown:hover .navbar-link,
+    .navbar-item.has-dropdown.is-active .navbar-link,
+    .navbar-item.has-dropdown:hover .navbar-link {
+      background-color: transparent;
+    }
+
+    .navbar-end {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+
+      .button {
+        height: 1.5em;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin: 0 .5rem;
+        font-size: 2.3em;
+        text-transform: uppercase;
+      }
+
+      .top-phone {
+        font-family: "tandelle";
+        font-size: 2em;
+      }
+    }
+
+    .mini-nav {
+      align-items: center;
+    }
+  }
+
+  .top-two {
+    background-color: #000;
+    box-shadow: 0 0 30px #000;
+    padding: .75rem 0;
+
+    @media screen and (min-width: $desktop) {
+      height: 5rem;
+    }
+
+    .navbar {
+      justify-content: space-between;
+    }
+
+    .navbar-bottom-row {
+      flex-wrap: wrap;
+    }
+
+    .main-navigation-menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      @media screen and (max-width: $desktop) {
+        display: none;
+      }
+    }
+
+    .navbar-item {
+      padding: 0 .5rem;
+      height: 3.5rem;
+
+      .navbar-dropdown {
+        top: 92%;
+        padding: .5rem;
+        min-width: 200px;
+        border-top: 6px solid $primary;
+        border-radius: 0;
+        color: $primary;
+
+        a.menu-item {
+          color: $primary;
+          padding: .5rem;
+        }
+        a.menu-item:hover {
+          color: #000;
+        }
+
+        .navbar-dropdown {
+          top: 0;
+          left: 100%;
+        }
+      }
+
+      .navbar-item .navbar-dropdown {
+        display: none;
+      }
+
+      .navbar-item.is-hoverable:hover > .navbar-dropdown {
+        display: block;
+      }
+
+    }
+  }
+
+}
+
+@media screen and (min-width: $desktop) {
+  .scrolling #top {
+    .logo {
+      max-width: 125px;
+    }
+  }
+}
+
+.support-header {
+  h1 {
+    color: $white;
+    font-weight: $weight-normal;
+  }
+  background-color: $primary;
+  background-image: url("/wp-content/themes/kma-slim/img/hex-pattern.png");
+
+  display: flex;
+  align-items: center;
+  height: 100px;
+}
+
+.breadcrumbs {
+  padding: .5rem;
+  p, a {
+    font-size: 12px;
+    color: $grey;
+  }
+  strong {
+    color: #A7D163;
+  }
+}
+
+//Middle section
+#mid {
+  line-height: $body-line-height;
+  position: relative;
+  flex: 1 0 auto;
+  z-index: 2;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f9f8f3+53,d7d2c5+100 */
+  background: #F9F8F3; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(249,248,243,1) 53%, rgba(215,210,197,1) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(249,248,243,1) 53%,rgba(215,210,197,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(249,248,243,1) 53%,rgba(215,210,197,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f8f3', endColorstr='#d7d2c5',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 112px;
+  }
+
+  .home-header {
+    position: relative;
+    width: 100%;
+    background-color: #000;
+    min-height: 37rem;
+    box-shadow: 0 0 30px rgba(0,0,0,.5);
+
+    @media screen and (min-width: $tablet) {
+      min-height: 43rem;
+    }
+
+    @media screen and (min-width: $desktop) {
+      min-height: auto;
+      height: 31rem;
+      overflow: hidden;
+    }
+
+    @media screen and (min-width: $widescreen) {
+      height: 33rem;
+    }
+
+    @media screen and (min-width: $fullhd) {
+      height: 38rem;
+    }
+
+    .slide{
+      .slide-container {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+      }
+    }
+    @media screen and (min-width: $desktop) {
+      .slide{
+        .slide-container,
+        .container,
+        .columns,
+        .column {
+          height: 100%;
+        }
+        .slide-container {
+          flex-wrap: nowrap;
+          flex-direction: row;
+        }
+      }
+    }
+
+    .slide-content {
+      padding: 2rem;
+      background-color: #000;
+      text-align: center;
+      @media screen and (min-width: $desktop) {
+        background-color: transparent;
+        padding: 7rem 0;
+        overflow: visible;
+        position: absolute;
+        z-index: 30;
+        max-width: 213px;
+        text-align: left;
+      }
+      h2 {
+        font-size: 5rem;
+        font-family: "tandelle";
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      .slider-description {
+        color: #FFF;
+        font-size: 1.1em;
+        margin-bottom: 1rem;
+      }
+      .button {
+        font-size: 2em;
+        height: 3rem;
+      }
+    }
+
+    @media screen and (max-width: $desktop){
+      .slider-right,
+      .slider-left,
+      .slide-image-shadow {
+        display: none !important;
+      }
+    }
+  }
+
+  .next-event-large {
+    padding: 0;
+    background: url('/wp-content/themes/kma-slim/img/background.jpg') center no-repeat;
+    background-size: cover;
+    padding-bottom: 3rem;
+
+    @media screen and (max-width:$desktop) {
+      padding: 3rem 1rem;
+    }
+
+    .card {
+      border: 1px solid $primary;
+      min-height: 395px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (min-width: $tablet) {
+        height: 395px;
+        width: 269px;
+      }
+
+      .card-image {
+        height: 0;
+        overflow: hidden;
+        padding-bottom:67%;
+        text-align: left;
+        img {
+          width: 100%;
+        }
+      }
+
+      .card-footer {
+        margin-top: auto;
+      }
+    }
+  }
+
+  //sections
+  .section {
+    clear: both;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .section.pad {
+    padding: 2.5rem 1rem;
+  }
+
+  ul li {
+    list-style: disc;
+    padding-left: .25rem;
+    margin-left: 2rem;
+  }
+
+  .entry-content {
+    padding: 2rem 1rem;
+    @media screen and (min-width: $desktop) {
+      padding: 3rem 0;
+    }
+  }
+
+  .entry-content.has-sidebar {
+    @media screen and (min-width: $desktop) {
+      padding-right: 4rem;
+    }
+  }
+
+  .sidebar-section {
+    margin: 2rem 0;
+    line-height: $body-line-height;
+
+    .subtitle {
+      margin-top: -1.25rem;
+      margin-bottom: .5rem;
+      line-height: $content-heading-line-height;
+    }
+
+    p, a {
+      color: #424340;
+    }
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .social-media-section {
+    padding: 4rem 1rem;
+    background: url("/wp-content/themes/kma-slim/img/asphalt.jpg") center #000;
+    background-size: cover;
+
+    .social-module {
+      border: 1px solid $primary;
+      background-color: #FFF;
+      min-height: 450px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media screen and (min-width: $tablet) {
+        height: 450px;
+        width: 366px;
+      }
+
+      .card-bottom{
+        padding: 1rem .5rem;
+      }
+    }
+
+    .facebook {
+      .card-image {
+        position: relative;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        max-height: 50%;
+      }
+
+      .card-content {
+        flex-grow: 1;
+
+        .posted-on {
+          color: $grey;
+          font-size: .9em;
+        }
+      }
+    }
+
+    .facebook.no-image {
+      .card-content {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        padding: 0 2rem;
+        ///* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c19724+0,c4ac66+100 */
+        //background: rgb(193,151,36); /* Old browsers */
+        //background: -moz-linear-gradient(-45deg, rgba(193,151,36,1) 0%, rgba(196,172,102,1) 100%); /* FF3.6-15 */
+        //background: -webkit-linear-gradient(-45deg, rgba(193,151,36,1) 0%,rgba(196,172,102,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        //background: linear-gradient(135deg, rgba(193,151,36,1) 0%,rgba(196,172,102,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        //filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c19724', endColorstr='#c4ac66',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+        .post-text {
+          color: rgb(193,151,36);
+          font-size: 2.3em;
+          line-height: 1.2em;
+          padding: .5rem 0;
+        }
+      }
+    }
+
+    .tripadvisor {
+      img {
+        display: block;
+      }
+      #CDSWIDSSP.widSSP {
+        width: 100% !important;
+
+        @media screen and (min-width: $tablet) {
+          width: 365px !important;
+        }
+      }
+    }
+  }
+}
+
+#menu-footer-menu {
+  background-color: #c5ad5f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'tandelle';
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  list-style: none;
+  flex-direction: column;
+  padding: .25rem 0;
+
+  @media screen and (min-width: $tablet) {
+    flex-direction: row;
+  }
+
+  li {
+    a {
+      display: inline-block;
+      padding: .5rem 1rem;
+      color: #ddd8cb;
+    }
+  }
+}
+
+#bot {
+  background-color: #202221;
+
+
+}
+
+///page CTA
+.page-cta {
+
+}
+
+@media screen and (min-width:$desktop) {
+  .tire-texture {
+    background: url("/wp-content/themes/kma-slim/img/tiremark.png") center repeat-x;
+    height: 0;
+    width: 100%;
+    padding-bottom: 70px;
+  }
+}
+
+///Footer
+#bot {
+  position: relative;
+  z-index: 1;
+  padding: 2rem 1rem;
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    padding: 3rem 0 3rem;
+    text-align: left;
+  }
+
+  .footer-nav-menu {
+    padding: 1.5rem;
+    h4.title, h4.title a {
+      color: #c0c2be;
+      font-weight: $weight-bold;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    h4.title {
+      margin-bottom: .5rem !important;
+    }
+    .footer-submenu-item {
+      font-style: italic;
+      color: #005B85;
+      padding: .25rem 0;
+      display: block;
+      margin-top: .25rem;
+    }
+    .footer-submenu-item.phone {
+      font-weight: $weight-bold;
+      font-style: normal;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+#bot-bot {
+  padding: .5rem 0;
+  background-color: #3c3c3c;
+
+  @media screen and (min-width: $desktop) {
+    padding: .5rem 1rem;
+  }
+
+  p {
+    color: #f8f5ef;
+    font-size: .8em;
+    a {
+      color: #f8f5ef;
+      text-decoration: underline;
+    }
+
+    .siteby {
+      display: inline-block;
+
+      svg {
+        height: 11px;
+      }
+    }
+  }
+}
