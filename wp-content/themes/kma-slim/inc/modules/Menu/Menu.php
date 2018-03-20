@@ -75,7 +75,7 @@ class Menu
             'post_type'      => 'menu_item',
             'post_status'    => 'publish',
         );
-       
+
         if ($category != '') {
             $categoryarray = array(
                 array(
@@ -89,15 +89,15 @@ class Menu
         }
 
         $itemlist = get_posts($request);
-     
+
         $itemArray=[];
         foreach ($itemlist as $item) {
             $itemArray[] = [
                 'id'            => (isset($item->ID)                               ? $item->ID : null),
                 'name'          => (isset($item->post_title)                       ? $item->post_title : null),
                 'slug'          => (isset($item->post_name)                        ? $item->post_name : null),
-                'photo'         => (isset($item->item_details_photo_file)          ? $item->item_details_photo_file : null),
-                'price'         => (isset($item->item_details_price)               ? $item->item_details_price : null),
+                'photo'         => (isset($item->entree_info_photo_file)          ? $item->entree_info_photo_file : null),
+                'price'         => (isset($item->entree_info_price)               ? $item->entree_info_price : null),
                 'description'   => (isset($item->description_html)                 ? $item->description_html : null),
                 'link'          => get_permalink($item->ID),
             ];
@@ -115,7 +115,7 @@ class Menu
             'order'         	=> 'ASC',
             'offset'			=> 0
         ));
-        
+
         return $menu_category_terms;
     }
     /**

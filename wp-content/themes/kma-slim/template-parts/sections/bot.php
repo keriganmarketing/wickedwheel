@@ -36,10 +36,10 @@ use Includes\Modules\Social\SocialSettingsPage;
                     <div class="column is-4 has-text-centered">
                         <img src="<?php echo get_template_directory_uri() . '/img/map.png'; ?>" alt="Directions to The Wicked Wheel">
                     </div>
-                    <div class="column is-4 has-text-centered has-text-right-desktop">
-                        <p>While you're in town, visit</p>
+                    <div class="column is-4 footer-partners">
+                        <p class="while-youre-here">While you're in town, visit</p>
                         <img src="<?php echo get_template_directory_uri() . '/img/pwillys-logo.png'; ?>" alt="Directions to The Wicked Wheel">
-                        <p><a href="https://pwillys.com" target="_blank" >visit website.</a></p>
+                        <p class="visit-website"><a href="https://pwillys.com" target="_blank" >visit website.</a></p>
                     </div>
                 </div>
             </div>

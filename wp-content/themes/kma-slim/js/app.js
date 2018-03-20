@@ -12,10 +12,13 @@ import slide from './components/slide.vue';
 import GoogleMap from './components/GoogleMap.vue';
 import GoogleMapPin from './components/GoogleMapPin.vue';
 import VueParallaxJs from 'vue-parallax-js';
+import {VueMasonryPlugin} from 'vue-masonry';
 
 window.Vue.use(VueParallaxJs, {
     minWidth: 1000,
 });
+
+Vue.use(VueMasonryPlugin)
 
 let app = new Vue({
 

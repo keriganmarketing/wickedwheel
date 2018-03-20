@@ -347,16 +347,15 @@ body {
 }
 
 .support-header {
-  h1 {
-    color: $white;
-    font-weight: $weight-normal;
-  }
-  background-color: $primary;
-  background-image: url("/wp-content/themes/kma-slim/img/hex-pattern.png");
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,d7d2c5+100&1+0,0.3+100 */
+  background: -moz-linear-gradient(top, rgba(0,0,0,1) 0%, rgba(215,210,197,0.3) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0,0,0,1) 0%,rgba(215,210,197,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0,0,0,1) 0%,rgba(215,210,197,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#4dd7d2c5',GradientType=0 ); /* IE6-9 */
+}
 
-  display: flex;
-  align-items: center;
-  height: 100px;
+h1.title {
+  padding-top: 1rem;
 }
 
 .breadcrumbs {
@@ -478,10 +477,12 @@ body {
     background-size: cover;
     padding-bottom: 3rem;
 
-    @media screen and (max-width:$desktop) {
+    @media screen and (max-width: $desktop) {
       padding: 3rem 1rem;
     }
+  }
 
+  .events-grid {
     .card {
       border: 1px solid $primary;
       min-height: 395px;
@@ -490,7 +491,7 @@ body {
       flex-direction: column;
 
       @media screen and (min-width: $tablet) {
-        height: 395px;
+        height: 445px;
         width: 269px;
       }
 
@@ -504,8 +505,19 @@ body {
         }
       }
 
+      .card-content {
+        padding-bottom: 0;
+      }
+
       .card-footer {
+        border: none;
         margin-top: auto;
+        padding: 1rem 0;
+        .button {
+          font-size: 1.2rem;
+          padding-left: 1rem;
+          padding-right: 1rem;
+        }
       }
     }
   }
@@ -517,16 +529,28 @@ body {
     z-index: 1;
     background-color: transparent;
     padding: 0;
+
+
   }
 
   .section.pad {
-    padding: 2.5rem 1rem;
+    padding: 0 1rem 2rem;
+    @media screen and (min-width: $desktop){
+      padding: 0 0 2rem;
+    }
   }
 
   ul li {
     list-style: disc;
     padding-left: .25rem;
     margin-left: 2rem;
+  }
+
+  .header-content {
+    padding: 2rem 1rem 0;
+    @media screen and (min-width: $desktop) {
+      padding: 2rem 0 0;
+    }
   }
 
   .entry-content {
@@ -641,6 +665,60 @@ body {
   }
 }
 
+//Our Menu
+.our-menu {
+
+  .menu-item {
+    border-color: $primary;
+    margin-bottom: 0;
+    padding: 1rem 0;
+
+    .card-content {
+      margin: 0;
+      padding-bottom: 0;
+      padding-top: 0;
+
+      .item-name,
+      .item-price {
+        font-size: 1.7rem;
+        margin: 0;
+      }
+
+      .item-description {
+        color: #7d7d7d;
+        font-size: 14px;
+        font-style: italic;
+        line-height: 1.65em;
+        margin-bottom: 0;
+        margin-top:.5rem;
+      }
+    }
+
+  }
+  .menu-item.has-image {
+    padding-top: 0;
+
+    .item-price-info {
+      position: relative;
+      z-index: 10;
+      margin-top: -3rem;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+8,0.65+100 */
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 8%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 8%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 8%,rgba(0,0,0,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+      padding-bottom: 1rem;
+
+      .item-name,
+      .item-price {
+        color: #FFF;
+        text-shadow: 0 0 4px rgba(0,0,0,.75);
+      }
+    }
+
+  }
+}
+
 #menu-footer-menu {
   background-color: #c5ad5f;
   display: flex;
@@ -669,6 +747,39 @@ body {
 #bot {
   background-color: #202221;
 
+  .footer-phone {
+    a {
+      color: $primary;
+      font-size: 35px;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .open-text {
+    color: #FFF;
+    font-weight: $weight-bold;
+    margin-bottom: .5rem;
+  }
+
+  .footer-partners {
+    padding: 1rem 2rem;
+    text-align: center;
+    @media screen and (min-width: $desktop){
+      text-align: right !important;
+      padding: 1rem 4rem;
+    }
+
+    p, a {
+      color: #FFF !important;
+    }
+
+    .while-youre-here {
+      margin-bottom: -1rem;
+    }
+    .visit-website {
+      margin-top: -1.5rem;
+    }
+  }
 
 }
 
@@ -682,7 +793,10 @@ body {
     background: url("/wp-content/themes/kma-slim/img/tiremark.png") center repeat-x;
     height: 0;
     width: 100%;
-    padding-bottom: 70px;
+    padding-bottom: 57px;
+  }
+  .tire-texture.reversed {
+    transform:scaleX(-1);
   }
 }
 

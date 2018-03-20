@@ -81,7 +81,7 @@ use Includes\Modules\Navwalker\BulmaNavwalker;
 
                         <div class="navbar-end">
                             <div class="navbar-item">
-                                <a class="menu-button button is-primary is-rounded" href="#">Our Menu</a>
+                                <a class="menu-button button is-primary is-rounded" href="/menu/">Our Menu</a>
                             </div>
                             <?php wp_nav_menu([
                                 'theme_location' => 'main-menu',

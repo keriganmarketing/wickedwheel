@@ -21,6 +21,7 @@
     "babel-polyfill": "^6.26.0",
     "glob": "^7.1.2",
     "purgecss-webpack-plugin": "^0.20.0",
+    "vue-masonry": "^0.10.17",
     "vue-parallax-js": "0.0.5",
     "vue-template-compiler": "^2.5.13"
   }
