@@ -13,6 +13,8 @@ use Includes\Modules\Layouts\Layouts;
 use Includes\Modules\Helpers\PageField;
 use Includes\Modules\Leads\SimpleContact;
 use Includes\Modules\Social\SocialSettingsPage;
+use Includes\Modules\KMAFacebook\FacebookController;
+use Includes\Modules\KMAInstagram\InstagramController;
 
 use Includes\Modules\Menu\Menu;
 
@@ -49,6 +51,12 @@ $pageField->addField(get_option('page_on_front'), 'Get involved', [
     'Section Text'  => 'wysiwyg',
     'Section Photo' => 'image'
 ]);
+
+$facebook = new FacebookController();
+$facebook->setupAdmin();
+
+$instagram = new InstagramController();
+$instagram->setupAdmin();
 
 add_action('after_setup_theme', function () {
     load_theme_textdomain('kmaslim', get_template_directory() . '/languages');
