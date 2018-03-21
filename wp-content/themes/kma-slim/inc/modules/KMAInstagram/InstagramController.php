@@ -2,7 +2,7 @@
 
 namespace Includes\Modules\KMAInstagram;
 
-use MetzWeb\Instagram\Instagram;
+use Includes\Modules\KMAInstagram\Instagram;
 
 class InstagramController
 {
