@@ -115,4 +115,81 @@ class Instagram
         $result = $this->_makeOAuthCall($apiData);
         return (false === $token) ? $result : $result->access_token;
     }
+    /**
+     * Access Token Getter
+     *
+     * @return string
+     */
+    public function getAccessToken() {
+        return $this->_accesstoken;
+    }
+
+    /**
+     * API-key Setter
+     *
+     * @param string $apiKey
+     * @return void
+     */
+    public function setApiKey($apiKey) {
+        $this->_apikey = $apiKey;
+    }
+
+    /**
+     * API Key Getter
+     *
+     * @return string
+     */
+    public function getApiKey() {
+        return $this->_apikey;
+    }
+
+    /**
+     * API Secret Setter
+     *
+     * @param string $apiSecret
+     * @return void
+     */
+    public function setApiSecret($apiSecret) {
+        $this->_apisecret = $apiSecret;
+    }
+
+    /**
+     * API Secret Getter
+     *
+     * @return string
+     */
+    public function getApiSecret() {
+        return $this->_apisecret;
+    }
+
+    /**
+     * API Callback URL Setter
+     *
+     * @param string $apiCallback
+     * @return void
+     */
+    public function setApiCallback($apiCallback) {
+        $this->_callbackurl = $apiCallback;
+    }
+
+    /**
+     * API Callback URL Getter
+     *
+     * @return string
+     */
+    public function getApiCallback() {
+        return $this->_callbackurl;
+    }
+
+    /**
+     * Access Token Setter
+     *
+     * @param object|string $data
+     * @return void
+     */
+    public function setAccessToken($data) {
+        (true === is_object($data)) ? $token = $data->access_token : $token = $data;
+        $this->_accesstoken = $token;
+    }
+
 }

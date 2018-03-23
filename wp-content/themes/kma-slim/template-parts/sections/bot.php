@@ -34,6 +34,7 @@ use Includes\Modules\Social\SocialSettingsPage;
                         </div>
                     </div>
                     <div class="column is-4 has-text-centered">
+                        <a href="/contact/" class="button is-primary tandelle directions-button" >Get Directions</a>
                         <img src="<?php echo get_template_directory_uri() . '/img/map.png'; ?>" alt="Directions to The Wicked Wheel">
                     </div>
                     <div class="column is-4 footer-partners">

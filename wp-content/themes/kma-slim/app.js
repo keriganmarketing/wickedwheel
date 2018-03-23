@@ -4544,88 +4544,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             center: new google.maps.LatLng(this.latitude, this.longitude),
             disableDefaultUI: true,
             zoomControl: true,
-            scaleControl: true,
-            styles: [{
-                "featureType": "landscape",
-                "elementType": "all",
-                "stylers": [{
-                    "hue": "#FFBB00"
-                }, {
-                    "saturation": 43.400000000000006
-                }, {
-                    "lightness": 37.599999999999994
-                }, {
-                    "gamma": 1
-                }]
-            }, {
-                "featureType": "poi",
-                "elementType": "all",
-                "stylers": [{
-                    "hue": "#a0ff00"
-                }, {
-                    "saturation": "-21"
-                }, {
-                    "lightness": "35"
-                }, {
-                    "gamma": 1
-                }]
-            }, {
-                "featureType": "road.highway",
-                "elementType": "all",
-                "stylers": [{
-                    "hue": "#ffc200"
-                }, {
-                    "saturation": -61.8
-                }, {
-                    "lightness": "7"
-                }, {
-                    "gamma": 1
-                }]
-            }, {
-                "featureType": "road.arterial",
-                "elementType": "all",
-                "stylers": [{
-                    "hue": "#ff0300"
-                }, {
-                    "saturation": "-100"
-                }, {
-                    "lightness": "20"
-                }, {
-                    "gamma": 1
-                }]
-            }, {
-                "featureType": "road.local",
-                "elementType": "all",
-                "stylers": [{
-                    "hue": "#ff0300"
-                }, {
-                    "saturation": -100
-                }, {
-                    "lightness": "-14"
-                }, {
-                    "gamma": 1
-                }]
-            }, {
-                "featureType": "water",
-                "elementType": "all",
-                "stylers": [{
-                    "hue": "#0078ff"
-                }, {
-                    "saturation": "-65"
-                }, {
-                    "lightness": "-7"
-                }, {
-                    "gamma": 1
-                }]
-            }]
+            scaleControl: true
         };
         var map = new google.maps.Map(element, options);
         var bounds = new google.maps.LatLngBounds();
         this.markers = this.$children;
 
-        var _loop = function _loop() {
-            pin = _this.markers[i];
-
+        var _loop = function _loop(i) {
+            var pin = _this.markers[i];
             _this.pins.push({
                 latitude: pin._data.markerCoordinates.latitude,
                 longitude: pin._data.markerCoordinates.longitude
@@ -4634,8 +4560,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             var position = new google.maps.LatLng(pin.latitude, pin.longitude);
             var marker = new google.maps.Marker({
                 position: position,
-                map: map,
-                icon: '/wp-content/themes/kma-slim/img/map-pin.png'
+                map: map
             });
 
             var infowindow = new google.maps.InfoWindow({
@@ -4648,14 +4573,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 infowindow.open(map, marker);
             });
 
+            infowindow.open(map, marker);
+
             bounds.extend(position);
-            map.fitBounds(bounds);
+            //map.fitBounds(bounds);
         };
 
         for (var i = 0; i < this.markers.length; i++) {
-            var pin;
-
-            _loop();
+            _loop(i);
         }
     }
 
@@ -13687,6 +13612,9 @@ if (false) {
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
   return _c('div', {
     staticClass: "google-map",
+    staticStyle: {
+      "height": "340px"
+    },
     attrs: {
       "id": _vm.mapName
     }

@@ -107,6 +107,11 @@ body {
 
   .button {
     font-family: "tandelle";
+    font-size: 1.8em;
+    height: 2.75rem;
+  }
+  button.button {
+    line-height: .25em;
   }
 }
 
@@ -584,6 +589,13 @@ h1.title {
     }
   }
 
+  .content.contact {
+    .phone a,
+    .hours {
+      color: $body-color;
+    }
+  }
+
   .social-media-section {
     padding: 4rem 1rem;
     background: url("/wp-content/themes/kma-slim/img/asphalt.jpg") center #000;
@@ -809,6 +821,15 @@ h1.title {
   @media screen and (min-width: $tablet) {
     padding: 3rem 0 3rem;
     text-align: left;
+  }
+
+  .directions-button {
+    font-size: 1.8em;
+    height: 2.75rem;
+    box-shadow: 0 0 3px rgba(0,0,0,.4);
+    position: absolute;
+    margin: 5px;
+    width: 140px;
   }
 
   .footer-nav-menu {

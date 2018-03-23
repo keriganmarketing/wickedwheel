@@ -71,20 +71,6 @@ use Includes\Modules\KMAInstagram\InstagramController;
                 <div class="columns is-multiline">
                     <?php
 
-                    $photos = $instagram->getFeed(9);
-
-                    echo '<pre>', print_r($photos), '</pre>';
-
-                    $likes = $instagram->getLikes(9);
-                    $likedPhotos = $likes->data;
-
-                    foreach ($likedPhotos as $photo) {
-                        echo '<div class="column is-2">
-                                <img src="'.$photo->images->low_resolution->url.'" >
-                              </div>';
-                    }
-
-                    echo '<pre>', print_r($likes->data), '</pre>';
 
                     ?>
                 </div>
