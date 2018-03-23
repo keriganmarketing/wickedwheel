@@ -18,8 +18,10 @@ use Includes\Modules\Social\SocialSettingsPage;
             <div class="container">
                 <div class="columns is-multiline">
                     <div class="column is-4 has-text-centered">
-                        <img src="<?php echo get_template_directory_uri() . '/img/wings.png'; ?>" alt="The Wicked Wheel">
-                        <p class="footer-phone has-text-centered"><a class="tandelle" href="tel:850-588-7947" >850-588-7947</a></p>
+                        <img src="<?php echo get_template_directory_uri() . '/img/wings.png'; ?>"
+                             alt="The Wicked Wheel">
+                        <p class="footer-phone has-text-centered"><a class="tandelle" href="tel:850-588-7947">850-588-7947</a>
+                        </p>
                         <p class="open-text has-text-centered">Open 11am daily</p>
                         <div class="social">
                             <?php
@@ -34,13 +36,15 @@ use Includes\Modules\Social\SocialSettingsPage;
                         </div>
                     </div>
                     <div class="column is-4 has-text-centered">
-                        <a href="/contact/" class="button is-primary tandelle directions-button" >Get Directions</a>
-                        <img src="<?php echo get_template_directory_uri() . '/img/map.png'; ?>" alt="Directions to The Wicked Wheel">
+                        <a href="/contact/" class="button is-primary tandelle directions-button">Get Directions</a>
+                        <img src="<?php echo get_template_directory_uri() . '/img/map.png'; ?>"
+                             alt="Directions to The Wicked Wheel">
                     </div>
                     <div class="column is-4 footer-partners">
                         <p class="while-youre-here">While you're in town, visit</p>
-                        <img src="<?php echo get_template_directory_uri() . '/img/pwillys-logo.png'; ?>" alt="Directions to The Wicked Wheel">
-                        <p class="visit-website"><a href="https://pwillys.com" target="_blank" >visit website.</a></p>
+                        <img src="<?php echo get_template_directory_uri() . '/img/pwillys-logo.png'; ?>"
+                             alt="Directions to The Wicked Wheel">
+                        <p class="visit-website"><a href="https://pwillys.com" target="_blank">visit website.</a></p>
                     </div>
                 </div>
             </div>
@@ -49,6 +53,7 @@ use Includes\Modules\Social\SocialSettingsPage;
             <?php include(locate_template('template-parts/partials/copyright.php')); ?>
         </div>
     </div><!-- .sticky-footer -->
+    <modal><?= (isset($modalContent) && $modalContent != '' ? $modalContent : ''); ?></modal>
     </div><!-- .site-wrapper -->
-    </div><!-- .app -->
+</div><!-- .app -->
 <?php wp_footer(); ?>

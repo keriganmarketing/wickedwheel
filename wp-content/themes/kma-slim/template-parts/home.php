@@ -1,7 +1,5 @@
 <?php
 
-use GuzzleHttp\Client;
-
 /**
  * @package KMA
  * @subpackage kmaslim
@@ -10,9 +8,6 @@ use GuzzleHttp\Client;
  */
 $headline = ($post->page_information_headline != '' ? $post->page_information_headline : $post->post_title);
 $subhead  = ($post->page_information_subhead != '' ? $post->page_information_subhead : '');
-$client   = new Client();
-$response = $client->request('GET', 'https://api.instagram.com/v1/users/self/media/recent/?access_token=228307804.7df8172.54a8ca639187424b803cd7183436e501');
-$photos   = json_decode($response->getBody());
 
 include(locate_template('template-parts/sections/top.php'));
 ?>

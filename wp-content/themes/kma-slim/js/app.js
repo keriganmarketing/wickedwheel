@@ -11,6 +11,7 @@ import slider from './components/slider.vue';
 import slide from './components/slide.vue';
 import GoogleMap from './components/GoogleMap.vue';
 import GoogleMapPin from './components/GoogleMapPin.vue';
+import InstaGallery from './components/InstaGallery.vue';
 import VueParallaxJs from 'vue-parallax-js';
 import {VueMasonryPlugin} from 'vue-masonry';
 
@@ -34,6 +35,7 @@ let app = new Vue({
         'slide': slide,
         'google-map': GoogleMap,
         'pin': GoogleMapPin,
+        'insta-gallery': InstaGallery
     },
 
     data: {

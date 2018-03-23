@@ -24,7 +24,6 @@ use Includes\Modules\KMAInstagram\InstagramController;
                 <?php
 
                 $instagram = new InstagramController();
-                echo $instagram->showLoginButton();
 
                 $instagramPageID = (isset($_POST['instagram_page_id']) ? sanitize_text_field($_POST['instagram_page_id']) : get_option('instagram_page_id'));
                 $accessToken     = (isset($_POST['instagram_token']) ? sanitize_text_field($_POST['instagram_token']) : get_option('instagram_token'));
