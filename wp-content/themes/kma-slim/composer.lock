@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b366985c2984aa554d22921c33a3a657",
+    "content-hash": "3120f0e786159405ab6bc7ebd078f11e",
     "packages": [
         {
             "name": "cosenary/instagram",
@@ -269,12 +269,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kerigansolutions/fb-autoblog-wp.git",
-                "reference": "c9551fc7d236499f320a647c68db59440a9db07c"
+                "reference": "034d8e4e958b1649fd4e06d1c824d7d786e152aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/c9551fc7d236499f320a647c68db59440a9db07c",
-                "reference": "c9551fc7d236499f320a647c68db59440a9db07c",
+                "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/034d8e4e958b1649fd4e06d1c824d7d786e152aa",
+                "reference": "034d8e4e958b1649fd4e06d1c824d7d786e152aa",
                 "shasum": ""
             },
             "require": {
@@ -297,7 +297,7 @@
                     "email": "daron.adkins@gmail.com"
                 }
             ],
-            "time": "2018-03-20 19:24:42"
+            "time": "2018-03-23T14:40:04+00:00"
         },
         {
             "name": "nesbot/carbon",

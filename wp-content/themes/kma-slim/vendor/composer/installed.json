@@ -368,6 +368,51 @@
         "description": "Adds additional custom post type functionality for our WordPress sites"
     },
     {
+        "name": "cosenary/instagram",
+        "version": "v2.3",
+        "version_normalized": "2.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/cosenary/Instagram-PHP-API.git",
+            "reference": "fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/cosenary/Instagram-PHP-API/zipball/fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5",
+            "reference": "fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5",
+            "shasum": ""
+        },
+        "require": {
+            "ext-curl": "*",
+            "php": ">=5.2.0"
+        },
+        "time": "2014-11-29T13:10:42+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "MetzWeb\\Instagram\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD"
+        ],
+        "authors": [
+            {
+                "name": "Christian Metz",
+                "email": "christian-metz1@gmx.net",
+                "homepage": "http://metzweb.net"
+            }
+        ],
+        "description": "An easy-to-use PHP Class for accessing Instagram's API.",
+        "homepage": "https://github.com/cosenary/Instagram-PHP-API",
+        "keywords": [
+            "api",
+            "instagram"
+        ]
+    },
+    {
         "name": "symfony/polyfill-mbstring",
         "version": "v1.7.0",
         "version_normalized": "1.7.0.0",
@@ -560,19 +605,19 @@
         "source": {
             "type": "git",
             "url": "https://github.com/kerigansolutions/fb-autoblog-wp.git",
-            "reference": "c9551fc7d236499f320a647c68db59440a9db07c"
+            "reference": "034d8e4e958b1649fd4e06d1c824d7d786e152aa"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/c9551fc7d236499f320a647c68db59440a9db07c",
-            "reference": "c9551fc7d236499f320a647c68db59440a9db07c",
+            "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/034d8e4e958b1649fd4e06d1c824d7d786e152aa",
+            "reference": "034d8e4e958b1649fd4e06d1c824d7d786e152aa",
             "shasum": ""
         },
         "require": {
             "guzzlehttp/guzzle": "^6.3",
             "nesbot/carbon": "^1.22"
         },
-        "time": "2018-03-20T19:24:42+00:00",
+        "time": "2018-03-23T14:40:04+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {
@@ -589,51 +634,6 @@
                 "name": "Daron Adkins",
                 "email": "daron.adkins@gmail.com"
             }
-        ]
-    },
-    {
-        "name": "cosenary/instagram",
-        "version": "v2.3",
-        "version_normalized": "2.3.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/cosenary/Instagram-PHP-API.git",
-            "reference": "fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/cosenary/Instagram-PHP-API/zipball/fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5",
-            "reference": "fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5",
-            "shasum": ""
-        },
-        "require": {
-            "ext-curl": "*",
-            "php": ">=5.2.0"
-        },
-        "time": "2014-11-29T13:10:42+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "MetzWeb\\Instagram\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD"
-        ],
-        "authors": [
-            {
-                "name": "Christian Metz",
-                "email": "christian-metz1@gmx.net",
-                "homepage": "http://metzweb.net"
-            }
-        ],
-        "description": "An easy-to-use PHP Class for accessing Instagram's API.",
-        "homepage": "https://github.com/cosenary/Instagram-PHP-API",
-        "keywords": [
-            "api",
-            "instagram"
         ]
     }
 ]
