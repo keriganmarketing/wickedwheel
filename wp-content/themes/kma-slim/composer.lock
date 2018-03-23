@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "43872ab9c4593a7e6e5ce9acdb404c22",
+    "content-hash": "d3e9c6a39af6ad0a5fd217c5d2a4f5ef",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -222,16 +222,16 @@
         },
         {
             "name": "kerigansolutions/fb-autoblog-wp",
-            "version": "0.22",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kerigansolutions/fb-autoblog-wp.git",
-                "reference": "6e5dad304524719e4a427f3af3738710fa15c19f"
+                "reference": "e845284c7fa6a5f7d9b75e14c42ad914f9ddeafa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/6e5dad304524719e4a427f3af3738710fa15c19f",
-                "reference": "6e5dad304524719e4a427f3af3738710fa15c19f",
+                "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/e845284c7fa6a5f7d9b75e14c42ad914f9ddeafa",
+                "reference": "e845284c7fa6a5f7d9b75e14c42ad914f9ddeafa",
                 "shasum": ""
             },
             "require": {
@@ -254,7 +254,7 @@
                     "email": "daron.adkins@gmail.com"
                 }
             ],
-            "time": "2018-03-23T16:34:03+00:00"
+            "time": "2018-03-23 16:54:28"
         },
         {
             "name": "nesbot/carbon",
@@ -581,7 +581,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "kerigansolutions/fb-autoblog-wp": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
