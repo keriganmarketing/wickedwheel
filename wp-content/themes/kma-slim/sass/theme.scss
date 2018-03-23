@@ -118,6 +118,13 @@ body {
   button.button {
     line-height: .25em;
   }
+  .video {
+    height: 316px;
+    iframe {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  }
 }
 
 //Sticky Header
