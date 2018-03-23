@@ -7,19 +7,13 @@ namespace Composer\Autoload;
 class ComposerStaticInitce01450caa094108bfd947aa69a52fc9
 {
     public static $files = array (
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
-        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'de85a44be454aa97188dad52ed888bed' => __DIR__ . '/..' . '/panique/laravel-sass/sass-compiler.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
     );
 
     public static $prefixLengthsPsr4 = array (
-        'S' => 
-        array (
-            'Symfony\\Polyfill\\Mbstring\\' => 26,
-            'Symfony\\Component\\Translation\\' => 30,
-        ),
         'P' => 
         array (
             'Psr\\Http\\Message\\' => 17,
@@ -30,7 +24,6 @@ class ComposerStaticInitce01450caa094108bfd947aa69a52fc9
         ),
         'K' => 
         array (
-            'KeriganSolutions\\FacebookFeed\\' => 30,
             'KeriganSolutions\\CPT\\' => 21,
         ),
         'I' => 
@@ -43,21 +36,9 @@ class ComposerStaticInitce01450caa094108bfd947aa69a52fc9
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
         ),
-        'C' => 
-        array (
-            'Carbon\\' => 7,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Symfony\\Polyfill\\Mbstring\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
-        ),
-        'Symfony\\Component\\Translation\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/translation',
-        ),
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
@@ -65,10 +46,6 @@ class ComposerStaticInitce01450caa094108bfd947aa69a52fc9
         'MetzWeb\\Instagram\\' => 
         array (
             0 => __DIR__ . '/..' . '/cosenary/instagram/src',
-        ),
-        'KeriganSolutions\\FacebookFeed\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kerigansolutions/fb-autoblog-wp/src',
         ),
         'KeriganSolutions\\CPT\\' => 
         array (
@@ -89,10 +66,6 @@ class ComposerStaticInitce01450caa094108bfd947aa69a52fc9
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
-        ),
-        'Carbon\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/nesbot/carbon/src/Carbon',
         ),
     );
 
