@@ -1,0 +1,5 @@
+{
+    "require": {
+        "kerigansolutions/fb-autoblog-wp": "dev-master"
+    }
+}
