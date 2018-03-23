@@ -269,12 +269,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kerigansolutions/fb-autoblog-wp.git",
-                "reference": "50ee166e300eb6f6bceb66bd74426e2a6618e465"
+                "reference": "7848b7405ad2c322077986646d2e4e773ee8151a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/50ee166e300eb6f6bceb66bd74426e2a6618e465",
-                "reference": "50ee166e300eb6f6bceb66bd74426e2a6618e465",
+                "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/7848b7405ad2c322077986646d2e4e773ee8151a",
+                "reference": "7848b7405ad2c322077986646d2e4e773ee8151a",
                 "shasum": ""
             },
             "require": {
@@ -297,7 +297,7 @@
                     "email": "daron.adkins@gmail.com"
                 }
             ],
-            "time": "2018-03-23T15:15:55+00:00"
+            "time": "2018-03-23T15:40:36+00:00"
         },
         {
             "name": "nesbot/carbon",
