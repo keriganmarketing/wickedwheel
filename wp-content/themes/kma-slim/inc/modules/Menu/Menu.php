@@ -57,8 +57,66 @@ class Menu
      */
     public function createAdminColumns()
     {
+        add_filter('manage_menu_item_posts_columns',
+            function ($defaults) {
+                $defaults = [
+                    'cb'       => '<input type="checkbox">',
+                    'title'    => 'Item Name',
+                    'category' => 'Category',
+                    'price'    => 'Price',
+                    'date'     => 'Date'
+                ];
 
-        //TODO: make this work...
+                return $defaults;
+            }, 0);
+
+        add_action('manage_menu_item_posts_custom_column', function ($column_name, $post_ID) {
+            switch ($column_name) {
+                case 'category':
+                    $term = wp_get_object_terms($post_ID, 'menu_category');
+                    echo(isset($term[0]->name) ? $term[0]->name : null);
+                    break;
+
+                case 'price':
+                    $content = get_post_meta($post_ID, 'entree_info_price', true);
+                    echo(isset($content) ? $content : null);
+                    break;
+
+            }
+        }, 0, 2);
+
+        add_action('restrict_manage_posts', function () {
+            $type = 'post';
+            if (isset($_GET['post_type'])) {
+                $type = $_GET['post_type'];
+            }
+
+            if ('menu_item' == $type) {
+
+                $values = get_terms([
+                    'taxonomy'   => 'menu_category',
+                    'hide_empty' => false,
+                ]);
+
+                echo '<select name="menu_category">
+                    <option value="">All Categories</option>';
+
+                $current_v = isset($_GET['menu_category']) ? $_GET['menu_category'] : '';
+                foreach ($values as $label => $value) {
+                    printf
+                    (
+                        '<option value="%s"%s>%s</option>',
+                        $value->slug,
+                        $value->slug == $current_v ? ' selected="selected"' : '',
+                        $value->name
+                    );
+                }
+
+                echo '</select>';
+
+            }
+        });
+
     }
 
     /**
