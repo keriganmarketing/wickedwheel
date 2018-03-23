@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "d3e9c6a39af6ad0a5fd217c5d2a4f5ef",
+=======
+    "content-hash": "453d1f3e5773c6ed7251f8c1c06a2b53",
+>>>>>>> 65d3750c1f5ba3780d5b8e7038c648ee4866c6cc
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -222,16 +226,25 @@
         },
         {
             "name": "kerigansolutions/fb-autoblog-wp",
-            "version": "dev-master",
+            "version": "0.22",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kerigansolutions/fb-autoblog-wp.git",
+<<<<<<< HEAD
                 "reference": "e845284c7fa6a5f7d9b75e14c42ad914f9ddeafa"
             },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/e845284c7fa6a5f7d9b75e14c42ad914f9ddeafa",
                 "reference": "e845284c7fa6a5f7d9b75e14c42ad914f9ddeafa",
+=======
+                "reference": "6e5dad304524719e4a427f3af3738710fa15c19f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/6e5dad304524719e4a427f3af3738710fa15c19f",
+                "reference": "6e5dad304524719e4a427f3af3738710fa15c19f",
+>>>>>>> 65d3750c1f5ba3780d5b8e7038c648ee4866c6cc
                 "shasum": ""
             },
             "require": {
@@ -254,7 +267,11 @@
                     "email": "daron.adkins@gmail.com"
                 }
             ],
+<<<<<<< HEAD
             "time": "2018-03-23 16:54:28"
+=======
+            "time": "2018-03-23T16:34:03+00:00"
+>>>>>>> 65d3750c1f5ba3780d5b8e7038c648ee4866c6cc
         },
         {
             "name": "nesbot/carbon",
@@ -581,9 +598,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "kerigansolutions/fb-autoblog-wp": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
