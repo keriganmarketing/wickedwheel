@@ -223,24 +223,24 @@
     },
     {
         "name": "kerigansolutions/fb-autoblog-wp",
-        "version": "0.22",
-        "version_normalized": "0.22.0.0",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
             "url": "https://github.com/kerigansolutions/fb-autoblog-wp.git",
-            "reference": "6e5dad304524719e4a427f3af3738710fa15c19f"
+            "reference": "e845284c7fa6a5f7d9b75e14c42ad914f9ddeafa"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/6e5dad304524719e4a427f3af3738710fa15c19f",
-            "reference": "6e5dad304524719e4a427f3af3738710fa15c19f",
+            "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/e845284c7fa6a5f7d9b75e14c42ad914f9ddeafa",
+            "reference": "e845284c7fa6a5f7d9b75e14c42ad914f9ddeafa",
             "shasum": ""
         },
         "require": {
             "guzzlehttp/guzzle": "^6.3",
             "nesbot/carbon": "^1.22"
         },
-        "time": "2018-03-23T16:34:03+00:00",
+        "time": "2018-03-23T16:54:28+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {
