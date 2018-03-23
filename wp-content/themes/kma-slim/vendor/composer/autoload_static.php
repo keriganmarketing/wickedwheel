@@ -24,10 +24,6 @@ class ComposerStaticInitce01450caa094108bfd947aa69a52fc9
         array (
             'Psr\\Http\\Message\\' => 17,
         ),
-        'M' => 
-        array (
-            'MetzWeb\\Instagram\\' => 18,
-        ),
         'K' => 
         array (
             'KeriganSolutions\\FacebookFeed\\' => 30,
@@ -61,10 +57,6 @@ class ComposerStaticInitce01450caa094108bfd947aa69a52fc9
         'Psr\\Http\\Message\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/http-message/src',
-        ),
-        'MetzWeb\\Instagram\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/cosenary/instagram/src',
         ),
         'KeriganSolutions\\FacebookFeed\\' => 
         array (

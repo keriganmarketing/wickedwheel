@@ -10,7 +10,7 @@ use Includes\Modules\Slider\BulmaSlider;
 
         $i = 0;
         foreach($slides as $slide){
-            $slider .= '<slide id="'.number_format($i).'" image="'.$slide['photo'].'" >
+            $slider .= '<slide :id="'.number_format($i).'" image="'.$slide['photo'].'" >
                         <section class="slide-content">'
                             . ($slide['headline'] != '' ? '<h2 class="title is-1 is-primary">'.$slide['headline'].'</h2>' : '')
                             . ($slide['caption'] != '' ? '<p class="slider-subtitle">'.$slide['caption'].'</p>' : '')

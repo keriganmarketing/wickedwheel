@@ -368,51 +368,6 @@
         "description": "Adds additional custom post type functionality for our WordPress sites"
     },
     {
-        "name": "cosenary/instagram",
-        "version": "v2.3",
-        "version_normalized": "2.3.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/cosenary/Instagram-PHP-API.git",
-            "reference": "fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/cosenary/Instagram-PHP-API/zipball/fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5",
-            "reference": "fbf4c82e2cc7e9a7fd6f9fd7bba1fd2c506102a5",
-            "shasum": ""
-        },
-        "require": {
-            "ext-curl": "*",
-            "php": ">=5.2.0"
-        },
-        "time": "2014-11-29T13:10:42+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "MetzWeb\\Instagram\\": "src"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD"
-        ],
-        "authors": [
-            {
-                "name": "Christian Metz",
-                "email": "christian-metz1@gmx.net",
-                "homepage": "http://metzweb.net"
-            }
-        ],
-        "description": "An easy-to-use PHP Class for accessing Instagram's API.",
-        "homepage": "https://github.com/cosenary/Instagram-PHP-API",
-        "keywords": [
-            "api",
-            "instagram"
-        ]
-    },
-    {
         "name": "symfony/polyfill-mbstring",
         "version": "v1.7.0",
         "version_normalized": "1.7.0.0",
@@ -605,19 +560,19 @@
         "source": {
             "type": "git",
             "url": "https://github.com/kerigansolutions/fb-autoblog-wp.git",
-            "reference": "8e8f4bb3adb6186dffb078337581f208b9b1d6d3"
+            "reference": "e845284c7fa6a5f7d9b75e14c42ad914f9ddeafa"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/8e8f4bb3adb6186dffb078337581f208b9b1d6d3",
-            "reference": "8e8f4bb3adb6186dffb078337581f208b9b1d6d3",
+            "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/e845284c7fa6a5f7d9b75e14c42ad914f9ddeafa",
+            "reference": "e845284c7fa6a5f7d9b75e14c42ad914f9ddeafa",
             "shasum": ""
         },
         "require": {
             "guzzlehttp/guzzle": "^6.3",
             "nesbot/carbon": "^1.22"
         },
-        "time": "2018-03-23T16:10:49+00:00",
+        "time": "2018-03-23T16:54:28+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {
