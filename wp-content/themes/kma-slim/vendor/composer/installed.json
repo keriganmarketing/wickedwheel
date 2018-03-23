@@ -600,26 +600,26 @@
     },
     {
         "name": "kerigansolutions/fb-autoblog-wp",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "version": "0.22",
+        "version_normalized": "0.22.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/kerigansolutions/fb-autoblog-wp.git",
-            "reference": "8e8f4bb3adb6186dffb078337581f208b9b1d6d3"
+            "reference": "6e5dad304524719e4a427f3af3738710fa15c19f"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/8e8f4bb3adb6186dffb078337581f208b9b1d6d3",
-            "reference": "8e8f4bb3adb6186dffb078337581f208b9b1d6d3",
+            "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/6e5dad304524719e4a427f3af3738710fa15c19f",
+            "reference": "6e5dad304524719e4a427f3af3738710fa15c19f",
             "shasum": ""
         },
         "require": {
             "guzzlehttp/guzzle": "^6.3",
             "nesbot/carbon": "^1.22"
         },
-        "time": "2018-03-23T16:10:49+00:00",
+        "time": "2018-03-23T16:34:03+00:00",
         "type": "library",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "KeriganSolutions\\FacebookFeed\\": "src"
