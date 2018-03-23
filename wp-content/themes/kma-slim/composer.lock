@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3120f0e786159405ab6bc7ebd078f11e",
+    "content-hash": "17a712d001e847dd9927ef6f34063d58",
     "packages": [
         {
             "name": "cosenary/instagram",
@@ -265,7 +265,7 @@
         },
         {
             "name": "kerigansolutions/fb-autoblog-wp",
-            "version": "dev-master",
+            "version": "0.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kerigansolutions/fb-autoblog-wp.git",
@@ -624,9 +624,7 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "kerigansolutions/fb-autoblog-wp": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
