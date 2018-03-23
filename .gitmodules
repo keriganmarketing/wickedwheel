@@ -1,0 +1,3 @@
+[submodule "path_to_submodule"]
+    path = wp-content/themes/kma-slim/kerigansolutions/fb-autoblog-wp
+    url = https://github.com/keriganmarketing/wickedwheel.git
