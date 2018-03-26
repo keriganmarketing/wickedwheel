@@ -500,6 +500,8 @@ h1.title {
   }
 
   .events-grid {
+    padding: 3rem 0 2rem;
+
     .card {
       border: 1px solid $primary;
       min-height: 360px;
@@ -536,6 +538,15 @@ h1.title {
           padding-right: 1rem;
         }
       }
+
+      .tile-link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .card:hover {
+      border: 1px solid $grey-dark;
     }
   }
 

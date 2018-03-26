@@ -11,6 +11,7 @@
             <p class="time"><?php echo $event['time']; ?></p>
             <p class="location"><?php echo $event['location']; ?></p>
         </div>
+        <a class="tile-link" href="<?= $event['link']; ?>" ></a>
 <!--        <div class="card-footer is-centered is-justified">-->
 <!--            <p class="link"><a class="button is-primary tandelle is-outlined" href="--><?//= $event['link']; ?><!--" >More Info</a></p>-->
 <!--        </div>-->
