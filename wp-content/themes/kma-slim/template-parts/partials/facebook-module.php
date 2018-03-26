@@ -35,7 +35,7 @@ $date     = date('M j',strtotime($fbPost->created_time)) . ' at ' . date('g:i a'
             <p class="posted-on">Posted on <?= $date; ?></p>
         </div>
         <div class="card-bottom">
-            <a class="button is-primary is-large is-rounded has-shadow" href="<?= $fbPost->permalink_url; ?>">Read more on Facebook</a>
+            <a class="button is-primary is-large is-rounded has-shadow" target="_blank" href="<?= $fbPost->permalink_url; ?>">Read more on Facebook</a>
         </div>
     </div>
 
