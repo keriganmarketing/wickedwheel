@@ -627,13 +627,13 @@ h1.title {
     .social-module {
       border: 1px solid $primary;
       background-color: #FFF;
-      min-height: 450px;
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
 
       @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 450px;
         height: 450px;
         width: 366px;
       }
@@ -644,16 +644,23 @@ h1.title {
     }
 
     .facebook {
+
       .card-image {
         position: relative;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        max-height: 50%;
+        display: block;
+        @media screen and (min-width: $desktop) {
+          display: flex;
+          align-items: center;
+          overflow: hidden;
+          max-height: 50%;
+        }
       }
 
       .card-content {
-
+        p {
+          word-wrap: normal;
+          display: block;
+        }
         .posted-on {
           color: $grey;
           font-size: .9em;
@@ -682,6 +689,9 @@ h1.title {
           padding: .5rem 0;
         }
       }
+    }
+
+    .instagram {
     }
 
     .tripadvisor {

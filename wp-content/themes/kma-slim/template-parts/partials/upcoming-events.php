@@ -9,7 +9,7 @@ if (count($eventsArray) > 0) { ?>
     <div class="next-event-large">
         <div class="tire-texture"></div>
         <div class="container">
-            <div class="events-grid columns is-multiline is-aligned is-justified is-mobile">
+            <div class="events-grid columns is-multiline is-aligned is-justified">
                 <?php foreach ($eventsArray as $event) { ?>
                     <?php include(locate_template('template-parts/partials/mini-event.php')); ?>
                 <?php } ?>
