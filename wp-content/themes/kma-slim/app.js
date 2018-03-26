@@ -4663,7 +4663,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
 
-
     methods: {
         setPhoto: function setPhoto(index) {
             this.currentPhoto = index;
