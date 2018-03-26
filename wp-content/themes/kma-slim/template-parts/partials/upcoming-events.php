@@ -5,11 +5,11 @@ use Includes\Modules\Events\Events;
 $events      = new Events();
 $eventsArray = $events->getHomePageEvents(4);
 
-if (count($eventsArray) > 0) { ?>
+if (count($eventsArray) > 1) { ?>
     <div class="next-event-large">
         <div class="tire-texture"></div>
         <div class="container">
-            <div class="events-grid columns is-multiline is-aligned is-justified">
+            <div class="events-grid columns is-multiline is-aligned is-justified is-8">
                 <?php foreach ($eventsArray as $event) { ?>
                     <?php include(locate_template('template-parts/partials/mini-event.php')); ?>
                 <?php } ?>
@@ -17,4 +17,8 @@ if (count($eventsArray) > 0) { ?>
             <p class="has-text-centered"><a class="button is-primary is-rounded is-large has-shadow" href="/events/" >More Events & Specials</a></p>
         </div>
     </div>
+<?php }else{ ?>
+    <section class="support-header">
+        <div class="tire-texture"></div>
+    </section>
 <?php } ?>

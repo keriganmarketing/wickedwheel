@@ -1,4 +1,4 @@
-<div class="column">
+<div class="column is-3 is-variable">
     <div class="card has-text-centered">
         <div class="card-image">
             <a href="<?= $event['link']; ?>" >
@@ -12,8 +12,5 @@
             <p class="location"><?php echo $event['location']; ?></p>
         </div>
         <a class="tile-link" href="<?= $event['link']; ?>" ></a>
-<!--        <div class="card-footer is-centered is-justified">-->
-<!--            <p class="link"><a class="button is-primary tandelle is-outlined" href="--><?//= $event['link']; ?><!--" >More Info</a></p>-->
-<!--        </div>-->
     </div>
 </div>
