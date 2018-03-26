@@ -15,7 +15,7 @@
                 <textarea class="textarea" name="message" placeholder="Type your message here."></textarea>
             </div>
             <div class="column is-12">
-                <button class="button is-primary" type="submit">submit</button>
+                <button class="button is-primary is-rounded has-shadow" type="submit">submit</button>
             </div>
         </div>
     </form>

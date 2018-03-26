@@ -39,7 +39,7 @@ include(locate_template('template-parts/sections/top.php'));
                                     <pin :latitude="30.182326" :longitude="-85.8077277" title="The Wicked Wheel">
                                         <p><strong>The Wicked Wheel</strong></p>
                                         <p class="address">10025 Hutchison Blvd,<br>Panama City Beach, FL 32408</p>
-                                        <p class="appt-button"><a class="button is-primary is-fullwidth"
+                                        <p class="appt-button"><a class="button is-primary is-rounded has-shadow is-fullwidth"
                                                                   href="https://www.google.com/maps/dir/29.9516777,-85.4236099/The+Wicked+Wheel+Bar+%26+Grill,+10025+Hutchison+Blvd,+Panama+City+Beach,+FL+32408">Get
                                                 Directions</a></p>
                                     </pin>
