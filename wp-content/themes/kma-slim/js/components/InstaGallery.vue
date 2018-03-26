@@ -34,9 +34,6 @@
                 showModal: false
             }
         },
-        mounted() {
-
-        },
         methods: {
             setPhoto(index){
                 this.currentPhoto = index;

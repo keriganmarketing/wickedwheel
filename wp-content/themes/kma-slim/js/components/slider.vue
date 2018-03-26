@@ -25,14 +25,9 @@
             };
         },
 
-        created(){
-
+        mounted(){
             this.slides = this.$children;
             setInterval(() => { if(this.paused === false){ this.nextSlide() } }, 6000)
-
-        },
-
-        mounted(){
             this.slides[0].isActive = true
         },
 

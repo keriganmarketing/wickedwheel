@@ -4662,7 +4662,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             showModal: false
         };
     },
-    mounted: function mounted() {},
+
 
     methods: {
         setPhoto: function setPhoto(index) {
@@ -4892,7 +4892,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             paused: false
         };
     },
-    created: function created() {
+    mounted: function mounted() {
         var _this = this;
 
         this.slides = this.$children;
@@ -4901,8 +4901,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 _this.nextSlide();
             }
         }, 6000);
-    },
-    mounted: function mounted() {
         this.slides[0].isActive = true;
     },
 
