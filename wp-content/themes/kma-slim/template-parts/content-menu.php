@@ -25,18 +25,19 @@ include(locate_template('template-parts/sections/top.php'));
                 <div class="container">
                     <div class="entry-content content">
                         <?php the_content(); ?>
-                    </div>
-                    <div class="section pad">
-                        <div v-masonry transition-duration="0.3s" item-selector=".menu-category"
-                             class="our-menu columns is-multiline">
-                            <?php foreach ($menuCategories as $menuCategory) { ?>
-                                <div v-masonry-tile class="menu-category column is-6 is-4-widescreen">
-                                    <h2 class="title is-2 tandelle"><?= $menuCategory['category_name']; ?></h2>
-                                    <?php foreach ($menuCategory['menu_items'] as $menuItem) { ?>
-                                        <?php include(locate_template('template-parts/partials/mini-menu-item.php')); ?>
-                                    <?php } ?>
-                                </div>
-                            <?php } ?>
+
+                        <div class="section">
+                            <div v-masonry transition-duration="0.3s" item-selector=".menu-category"
+                                 class="our-menu columns is-multiline">
+                                <?php foreach ($menuCategories as $menuCategory) { ?>
+                                    <div v-masonry-tile class="menu-category column is-6 is-4-widescreen">
+                                        <h2 class="title is-2 tandelle"><?= $menuCategory['category_name']; ?></h2>
+                                        <?php foreach ($menuCategory['menu_items'] as $menuItem) { ?>
+                                            <?php include(locate_template('template-parts/partials/mini-menu-item.php')); ?>
+                                        <?php } ?>
+                                    </div>
+                                <?php } ?>
+                            </div>
                         </div>
                     </div>
                 </div>
