@@ -9,6 +9,6 @@ $photos = $instagram->getFeed(9);
         <insta-gallery :photos=<?= $photos; ?>></insta-gallery>
     </div>
     <div class="card-bottom">
-        <a class="button is-primary is-large is-rounded">View more on Instagram</a>
+        <a class="button is-primary is-large is-rounded has-shadow">View more on Instagram</a>
     </div>
 </div>

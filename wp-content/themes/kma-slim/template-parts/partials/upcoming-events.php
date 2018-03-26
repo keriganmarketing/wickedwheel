@@ -14,7 +14,7 @@ if (count($eventsArray) > 0) { ?>
                     <?php include(locate_template('template-parts/partials/mini-event.php')); ?>
                 <?php } ?>
             </div>
-            <p class="has-text-centered"><a class="button is-primary is-rounded is-large" href="/events/" >More Events & Specials</a></p>
+            <p class="has-text-centered"><a class="button is-primary is-rounded is-large has-shadow" href="/events/" >More Events & Specials</a></p>
         </div>
     </div>
 <?php } ?>
