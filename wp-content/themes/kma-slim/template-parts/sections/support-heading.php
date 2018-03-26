@@ -1,6 +1,5 @@
 <div class="sticky-header-pad support"></div>
 <section class="support-header">
-    <div class="tire-texture reversed"></div>
     <div class="tire-texture"></div>
 </section>
 <div class="container">
