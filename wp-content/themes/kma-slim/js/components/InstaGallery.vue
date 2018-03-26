@@ -9,9 +9,9 @@
                 <div class="photo-holder" >
                     <img :src="photos[currentPhoto].large" >
                 </div>
-                <div class="columns">
-                    <div class="column is-6"><a @click="previousPhoto">Previous</a></div>
-                    <div class="column is-6"><a @click="nextPhoto">Next</a></div>
+                <div class="navigation columns is-mobile is-centered is-justified">
+                    <div class="column is-narrow has-text-right"><a class="button is-primary tandelle" @click="previousPhoto">Previous</a></div>
+                    <div class="column is-narrow has-text-left"><a class="button is-primary tandelle" @click="nextPhoto">Next</a></div>
                 </div>
             </div>
             <button class="modal-close is-large" @click="toggleGallery"></button>
@@ -29,7 +29,6 @@
         },
         data() {
             return {
-                viewer: {},
                 currentPhoto: 0,
                 showModal: false
             }
@@ -37,19 +36,16 @@
         methods: {
             setPhoto(index){
                 this.currentPhoto = index;
-                this.viewer = this.$refs.viewerTemplate;
             },
             toggleGallery(index){
                 this.setPhoto(index);
                 this.showModal = !this.showModal;
             },
             nextPhoto(){
-                let nextPhoto = (this.currentPhoto < this.photos.length -1 ? this.currentPhoto + 1 : 0);
-                this.setPhoto(nextPhoto);
+                this.setPhoto(this.currentPhoto < this.photos.length -1 ? this.currentPhoto + 1 : 0);
             },
             previousPhoto(){
-                let nextPhoto = (this.currentPhoto > 1 ? this.currentPhoto - 1 : this.photos.length);
-                this.setPhoto(nextPhoto);
+                this.setPhoto(this.currentPhoto > 1 ? this.currentPhoto - 1 : this.photos.length);
             }
         }
     }
@@ -63,16 +59,34 @@
     .modal-content.large {
         width: 960px;
         max-width: 100%;
-        overflow: hidden;
+        overflow: visible;
+        max-height: calc(100vh - 100px);
     }
 
     .photo-holder {
         text-align: center;
         overflow: hidden;
+        height: 75vh;
+        width: 100%;
+        display: block;
     }
 
-    .photo-holder img {
-        max-height: 90vh;
-        max-width: 90vh;
+    @media screen and (min-width:768px){
+        .photo-holder {
+            padding-top: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .photo-holder img {
+            max-height: 90%;
+            max-width: 90%;
+        }
+    }
+
+    .navigation {
+        padding: 10px;
+        height: 10vh;
+        width: 100%;
     }
 </style>

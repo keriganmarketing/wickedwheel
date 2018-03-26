@@ -24,12 +24,13 @@ include(locate_template('template-parts/sections/top.php'));
                 <div class="container">
                     <div class="entry-content content">
                         <?php the_content(); ?>
-                    </div>
-                    <div class="section pad">
-                        <div class="events-grid columns is-multiline is-aligned is-justified is-mobile">
-                            <?php foreach ($eventsArray as $event) { ?>
-                                <?php include(locate_template('template-parts/partials/mini-event.php')); ?>
-                            <?php } ?>
+
+                        <div class="section">
+                            <div class="events-grid columns is-multiline is-aligned">
+                                <?php foreach ($eventsArray as $event) { ?>
+                                    <?php include(locate_template('template-parts/partials/mini-event.php')); ?>
+                                <?php } ?>
+                            </div>
                         </div>
                     </div>
                 </div>

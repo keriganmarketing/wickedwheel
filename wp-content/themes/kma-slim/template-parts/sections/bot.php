@@ -56,4 +56,6 @@ use Includes\Modules\Social\SocialSettingsPage;
     <modal><?= (isset($modalContent) && $modalContent != '' ? $modalContent : ''); ?></modal>
     </div><!-- .site-wrapper -->
 </div><!-- .app -->
+    <script async
+            src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=74&amp;locationId=2701149&amp;lang=en_US&amp;rating=true&amp;nreviews=3&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=true&amp;border=false&amp;display_version=2"></script>
 <?php wp_footer(); ?>

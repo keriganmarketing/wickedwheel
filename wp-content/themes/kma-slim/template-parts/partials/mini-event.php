@@ -1,4 +1,4 @@
-<div class="column is-narrow">
+<div class="column">
     <div class="card has-text-centered">
         <div class="card-image">
             <a href="<?= $event['link']; ?>" >

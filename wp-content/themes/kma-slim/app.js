@@ -4657,7 +4657,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     data: function data() {
         return {
-            viewer: {},
             currentPhoto: 0,
             showModal: false
         };
@@ -4666,19 +4665,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     methods: {
         setPhoto: function setPhoto(index) {
             this.currentPhoto = index;
-            this.viewer = this.$refs.viewerTemplate;
         },
         toggleGallery: function toggleGallery(index) {
             this.setPhoto(index);
             this.showModal = !this.showModal;
         },
         nextPhoto: function nextPhoto() {
-            var nextPhoto = this.currentPhoto < this.photos.length - 1 ? this.currentPhoto + 1 : 0;
-            this.setPhoto(nextPhoto);
+            this.setPhoto(this.currentPhoto < this.photos.length - 1 ? this.currentPhoto + 1 : 0);
         },
         previousPhoto: function previousPhoto() {
-            var nextPhoto = this.currentPhoto > 1 ? this.currentPhoto - 1 : this.photos.length;
-            this.setPhoto(nextPhoto);
+            this.setPhoto(this.currentPhoto > 1 ? this.currentPhoto - 1 : this.photos.length);
         }
     }
 });
@@ -9600,7 +9596,7 @@ exports.push([module.i, "\n.slider {\n    display: -ms-flexbox;\n    display: -w
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(64)();
-exports.push([module.i, "\nimg[data-v-6bc4a410] {\n    cursor: pointer;\n}\n.modal-content.large[data-v-6bc4a410] {\n    width: 960px;\n    max-width: 100%;\n    overflow: hidden;\n}\n.photo-holder[data-v-6bc4a410] {\n    text-align: center;\n    overflow: hidden;\n}\n.photo-holder img[data-v-6bc4a410] {\n    max-height: 90vh;\n    max-width: 90vh;\n}\n", ""]);
+exports.push([module.i, "\nimg[data-v-6bc4a410] {\n    cursor: pointer;\n}\n.modal-content.large[data-v-6bc4a410] {\n    width: 960px;\n    max-width: 100%;\n    overflow: visible;\n    max-height: calc(100vh - 100px);\n}\n.photo-holder[data-v-6bc4a410] {\n    text-align: center;\n    overflow: hidden;\n    height: 75vh;\n    width: 100%;\n    display: block;\n}\n@media screen and (min-width:768px){\n.photo-holder[data-v-6bc4a410] {\n        padding-top: 10vh;\n        display: -ms-flexbox;\n        display: -webkit-box;\n        display: flex;\n        -ms-flex-align: center;\n            -webkit-box-align: center;\n            align-items: center;\n        -ms-flex-pack: center;\n            -webkit-box-pack: center;\n            justify-content: center;\n}\n.photo-holder img[data-v-6bc4a410] {\n        max-height: 90%;\n        max-width: 90%;\n}\n}\n.navigation[data-v-6bc4a410] {\n    padding: 10px;\n    height: 10vh;\n    width: 100%;\n}\n", ""]);
 
 /***/ }),
 /* 346 */
@@ -13856,16 +13852,18 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       "src": _vm.photos[_vm.currentPhoto].large
     }
   })]), _vm._v(" "), _c('div', {
-    staticClass: "columns"
+    staticClass: "navigation columns is-mobile is-centered is-justified"
   }, [_c('div', {
-    staticClass: "column is-6"
+    staticClass: "column is-narrow has-text-right"
   }, [_c('a', {
+    staticClass: "button is-primary tandelle",
     on: {
       "click": _vm.previousPhoto
     }
   }, [_vm._v("Previous")])]), _vm._v(" "), _c('div', {
-    staticClass: "column is-6"
+    staticClass: "column is-narrow has-text-left"
   }, [_c('a', {
+    staticClass: "button is-primary tandelle",
     on: {
       "click": _vm.nextPhoto
     }

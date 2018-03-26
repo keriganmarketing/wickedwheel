@@ -502,6 +502,13 @@ h1.title {
   .events-grid {
     padding: 3rem 0 2rem;
 
+    .column {
+      @media screen and (min-width: $tablet) {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
     .card {
       border: 1px solid $primary;
       min-height: 360px;
@@ -511,7 +518,8 @@ h1.title {
 
       @media screen and (min-width: $tablet) {
         //height: 445px;
-        width: 269px;
+        //width: 269px;
+        max-width:360px;
       }
 
       .card-image {
@@ -525,7 +533,10 @@ h1.title {
       }
 
       .card-content {
-        padding-bottom: 0;
+        p {
+          margin: 0;
+          padding: 0;
+        }
       }
 
       .card-footer {
