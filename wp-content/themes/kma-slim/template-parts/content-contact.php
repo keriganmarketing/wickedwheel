@@ -35,7 +35,7 @@ include(locate_template('template-parts/sections/top.php'));
                             </div>
                             <div class="column is-12 is-6-desktop">
                                 <h2 class="title is-primary is-2 tandelle">Come Visit</h2>
-                                <google-map :latitude="30.182326" :longitude="-85.8077277" :zoom="15" :name="ww-map">
+                                <google-map :latitude="30.182326" :longitude="-85.8077277" :zoom="15" name="ww">
                                     <pin :latitude="30.182326" :longitude="-85.8077277" title="The Wicked Wheel">
                                         <p><strong>The Wicked Wheel</strong></p>
                                         <p class="address">10025 Hutchison Blvd,<br>Panama City Beach, FL 32408</p>
