@@ -35,7 +35,6 @@ include(locate_template('template-parts/sections/top.php'));
                             </div>
                             <div class="column is-12 is-6-desktop">
                                 <h2 class="title is-primary is-2 tandelle">Come Visit</h2>
-                                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRXeRhZCIYcKhtc-rfHCejAJsEW9rYtt4"></script>
                                 <google-map :latitude="30.182326" :longitude="-85.8077277" :zoom="15" :name="ww-map">
                                     <pin :latitude="30.182326" :longitude="-85.8077277" title="The Wicked Wheel">
                                         <p><strong>The Wicked Wheel</strong></p>
