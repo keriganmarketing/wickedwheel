@@ -51,6 +51,7 @@ class BulmaSlider {
             'Headline'           => 'text',
             'Caption'            => 'text',
             'Alt Tag'            => 'text',
+            'Button Text'        => 'text',
             'Link'               => 'text',
             'Open in New Window' => 'boolean',
         ) );
@@ -113,6 +114,7 @@ class BulmaSlider {
                 'headline'      => (isset($slide->slide_details_headline)           ? $slide->slide_details_headline : null),
                 'caption'       => (isset($slide->slide_details_caption)            ? $slide->slide_details_caption : null),
                 'alt'           => (isset($slide->slide_details_alt_tag)            ? $slide->slide_details_alt_tag : null),
+                'button_text'   => (isset($slide->slide_details_button_text)        ? $slide->slide_details_button_text : null),
                 'url'           => (isset($slide->slide_details_link)               ? $slide->slide_details_link : null),
                 'target'        => (isset($slide->slide_details_open_in_new_window) ? $slide->slide_details_open_in_new_window : null),
                 'description'   => (isset($slide->photo_description_html)           ? $slide->photo_description_html : null),

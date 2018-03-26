@@ -15,7 +15,8 @@ use Includes\Modules\Slider\BulmaSlider;
                             . ($slide['headline'] != '' ? '<h2 class="title is-1 is-primary">'.$slide['headline'].'</h2>' : '')
                             . ($slide['caption'] != '' ? '<p class="slider-subtitle">'.$slide['caption'].'</p>' : '')
                             . ($slide['description'] != '' ? '<div class="slider-description">'.$slide['description'].'</div>' : '')
-                            . ($slide['url'] != '' ? '<a class="button is-primary is-rounded" href="'.$slide['link'].'">MORE INFO</a>' : '') .
+                            . ($slide['url'] != '' ? '<a class="button is-primary is-rounded" href="'.$slide['link'].'">'
+                            . ($slide['button_text'] != '' ? $slide['button_text'] : 'More Info') . '</a>' : '') .
                         '</section>
                         </slide>';
             $i++;
