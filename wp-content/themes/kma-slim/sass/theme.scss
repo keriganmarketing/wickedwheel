@@ -775,10 +775,19 @@ h1.title {
   .menu-item.has-image {
     padding-top: 0;
 
+    .card-image {
+      figure {
+        overflow: hidden;
+        img {
+          height: auto;
+        }
+      }
+    }
+
     .item-price-info {
       position: relative;
       z-index: 10;
-      margin-top: -3rem;
+      margin-top: -7.25rem;
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+8,0.65+100 */
       background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 8%, rgba(0,0,0,0.8) 100%); /* FF3.6-15 */
       background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 8%,rgba(0,0,0,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
