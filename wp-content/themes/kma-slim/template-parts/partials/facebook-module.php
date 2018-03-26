@@ -8,7 +8,7 @@ $fbPost = $feed->posts[0];
 
 $isVideo  = ($fbPost->type == 'video');
 $hasImage = ($fbPost->full_picture != '' && $isVideo == false);
-$date     = date('M j') . ' at ' . date('g:i a');
+$date     = date('M j',strtotime($fbPost->created_time)) . ' at ' . date('g:i a',strtotime($fbPost->created_time));
 ?>
     <div class="card social-module facebook has-text-centered <?= ($hasImage == true ? 'has-image' : 'no-image'); ?>">
         <?php if ($hasImage == true) { ?>

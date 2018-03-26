@@ -54,6 +54,7 @@ class Events
             'Show Details'         => 'boolean',
             'Feature on Home page' => 'boolean',
             'Tickets Link'         => 'text',
+            'Full Image'           => 'image'
         ]);
 
         $events->addMetaBox('Recurring Settings', [
@@ -241,6 +242,7 @@ class Events
                 'recurr_readable' => $this->getReadableDate($start, $end, $recurrDays),
                 'time'            => (isset($post->event_details_time) ? $post->event_details_time : null),
                 'location'        => (isset($post->event_details_location) ? $post->event_details_location : null),
+                'full_image'      => (isset($post->event_details_full_image) ? $post->event_details_full_image : null),
                 'details'         => (isset($post->event_details_show_details) ? $post->event_details_show_details : null),
                 'featured'        => (isset($post->event_details_feature_on_home_page) ? $post->event_details_feature_on_home_page : null),
                 'content'         => (isset($post->event_description_html) ? $post->event_description_html : null),
