@@ -26,6 +26,7 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-NBJ4JWR');</script>
     <!-- End Google Tag Manager -->
+    <script src="https://www.jscache.com/wejs?wtype=selfserveprop&amp;uniq=74&amp;locationId=2701149&amp;lang=en_US&amp;rating=true&amp;nreviews=3&amp;writereviewlink=true&amp;popIdx=true&amp;iswide=true&amp;border=false&amp;display_version=2"></script>
     <?php wp_head(); ?>
 </head>
 
