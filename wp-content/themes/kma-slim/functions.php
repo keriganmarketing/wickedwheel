@@ -45,18 +45,17 @@ $events->setupAdmin();
 $ourMenu = new Menu();
 $ourMenu->setupAdmin();
 
-$pageField = new PageField();
-$pageField->addField(get_option('page_on_front'), 'Get involved', [
-    'Section Title' => 'text',
-    'Section Text'  => 'wysiwyg',
-    'Section Photo' => 'image'
-]);
-
 $facebook = new FacebookController();
 $facebook->setupAdmin();
 
 $instagram = new InstagramController();
 $instagram->setupAdmin();
+
+PageField::addField('Contact Info',[
+	'Phone number' => 'text',
+    'Address'  => 'textarea',
+    'Hours'  => 'text'
+], 58);
 
 add_action('after_setup_theme', function () {
     load_theme_textdomain('kmaslim', get_template_directory() . '/languages');
