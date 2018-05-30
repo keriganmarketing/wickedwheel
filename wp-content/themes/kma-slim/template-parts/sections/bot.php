@@ -1,6 +1,7 @@
 <?php
 
 use Includes\Modules\Social\SocialSettingsPage;
+use Includes\Modules\Helpers\PageField;
 
 ?>
     <div class="sticky-footer">
@@ -20,9 +21,9 @@ use Includes\Modules\Social\SocialSettingsPage;
                     <div class="column is-4 has-text-centered">
                         <img src="<?php echo get_template_directory_uri() . '/img/wings.png'; ?>"
                              alt="The Wicked Wheel">
-                        <p class="footer-phone has-text-centered"><a class="tandelle" href="tel:850-588-7947">850-588-7947</a>
+                        <p class="footer-phone has-text-centered"><a class="tandelle" href="tel:<?= PageField::getField('contact_info_phone_number', 58); ?>"><?= PageField::getField('contact_info_phone_number', 58); ?></a>
                         </p>
-                        <p class="open-text has-text-centered">Open 11am daily</p>
+                        <p class="open-text has-text-centered">Open <?= PageField::getField('contact_info_hours', 58); ?> daily</p>
                         <div class="social">
                             <?php
                             $socialLinks = new SocialSettingsPage();
