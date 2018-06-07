@@ -26,7 +26,17 @@ class FacebookController
     public function getFeed($num = 1)
     {
         $feed = new FacebookFeed($this->facebookPageID,$this->facebookToken);
-        return $feed->fetch($num);
+
+        if($feed){
+            return $feed->fetch($num);
+        }else{
+            return false;
+        }
+        
+    }
+
+    public function showError($e){
+
     }
 
     public function setupAdmin()

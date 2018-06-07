@@ -3,12 +3,13 @@ use Includes\Modules\KMAFacebook\FacebookController;
 
 $facebook = new FacebookController();
 $feed = $facebook->getFeed(1);
+$connected = true;
 
-$fbPost = $feed->posts[0];
-
-$isVideo  = ($fbPost->type == 'video');
-$hasImage = ($fbPost->full_picture != '' && $isVideo == false);
-$date     = date('M j',strtotime($fbPost->created_time)) . ' at ' . date('g:i a',strtotime($fbPost->created_time));
+if($feed){
+    $fbPost = $feed->posts[0];
+    $isVideo  = ($fbPost->type == 'video');
+    $hasImage = ($fbPost->full_picture != '' && $isVideo == false);
+    $date     = date('M j',strtotime($fbPost->created_time)) . ' at ' . date('g:i a',strtotime($fbPost->created_time));
 ?>
     <div class="card social-module facebook has-text-centered <?= ($hasImage == true ? 'has-image' : 'no-image'); ?>">
         <?php if ($hasImage == true) { ?>
@@ -38,4 +39,4 @@ $date     = date('M j',strtotime($fbPost->created_time)) . ' at ' . date('g:i a'
             <a class="button is-primary is-large is-rounded has-shadow" target="_blank" href="<?= $fbPost->permalink_url; ?>">Read more on Facebook</a>
         </div>
     </div>
-
+<?php } ?>
