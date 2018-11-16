@@ -38,6 +38,7 @@ class ComposerStaticInit06ddd92afef8f19f1325cc737acf7581
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'Gothick\\AkismetClient\\' => 22,
         ),
     );
 
@@ -77,6 +78,10 @@ class ComposerStaticInit06ddd92afef8f19f1325cc737acf7581
         'GuzzleHttp\\' => 
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
+        ),
+        'Gothick\\AkismetClient\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/gothick/php-akismet/src',
         ),
     );
 
