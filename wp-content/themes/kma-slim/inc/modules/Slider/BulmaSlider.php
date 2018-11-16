@@ -48,7 +48,7 @@ class BulmaSlider {
 
         $slider->addMetaBox( 'Slide Details', array(
             'Photo File'         => 'image',
-            'Headline'           => 'text',
+            'Headline'           => 'textarea',
             'Caption'            => 'text',
             'Alt Tag'            => 'text',
             'Button Text'        => 'text',
