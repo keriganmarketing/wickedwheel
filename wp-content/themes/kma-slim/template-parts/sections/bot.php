@@ -23,7 +23,7 @@ use Includes\Modules\Helpers\PageField;
                              alt="The Wicked Wheel">
                         <p class="footer-phone has-text-centered"><a class="tandelle" href="tel:<?= PageField::getField('contact_info_phone_number', 58); ?>"><?= PageField::getField('contact_info_phone_number', 58); ?></a>
                         </p>
-                        <p class="open-text has-text-centered">Open <?= PageField::getField('contact_info_hours', 58); ?> daily</p>
+                        <p class="open-text has-text-centered"><?= PageField::getField('contact_info_hours', 58); ?></p>
                         <div class="social">
                             <?php
                             $socialLinks = new SocialSettingsPage();
