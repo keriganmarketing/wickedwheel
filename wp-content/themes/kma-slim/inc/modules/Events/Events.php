@@ -247,6 +247,7 @@ class Events
                 'featured'        => (isset($post->event_details_feature_on_home_page) ? $post->event_details_feature_on_home_page : null),
                 'content'         => (isset($post->event_description_html) ? $post->event_description_html : null),
                 'link'            => get_permalink($post->ID),
+                'tickets'         => (isset($post->event_details_tickets_link) ? $post->event_details_tickets_link : null)
             ];
         }
         //echo '<pre>', print_r($outputArray), '<br>', '</pre>';

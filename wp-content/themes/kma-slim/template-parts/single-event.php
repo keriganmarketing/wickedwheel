@@ -27,6 +27,9 @@ include(locate_template('template-parts/sections/top.php'));
                             <div class="column is-4" >
                                 <p class="title is-4"><?= $event['recurr_readable']; ?></p>
                                 <p class="subtitle"><?= $event['time']; ?></p>
+                                <?php if($event['tickets']!='') {?>
+                                <p><a class="button is-primary is-rounded is-large has-shadow mb-3" target="_blank" href="<?php echo $event['tickets']; ?>" >Buy Tickets</a></p>
+                                <?php } ?>
                                 <p class="location"><a href="https://www.google.com/maps/dir/29.9516777,-85.4236099/The+Wicked+Wheel+Bar+%26+Grill,+10025+Hutchison+Blvd,+Panama+City+Beach,+FL+32408" >
                                     <span class="icon" >
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
