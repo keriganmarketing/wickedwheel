@@ -45,7 +45,7 @@ use Includes\Modules\Helpers\PageField;
                         <p class="while-youre-here">While you're in town, visit</p>
                         <a href="https://pwillys.com" target="_blank"><img src="<?php echo get_template_directory_uri() . '/img/pwillys-logo.png'; ?>"
                                                                            alt="Directions to The Wicked Wheel"></a>
-                        <p class="visit-website"><a href="https://pwillys.com" target="_blank">visit website.</a></p>
+                        <p class="visit-website"><a href="https://pwillys.com" target="_blank"><u>visit website.</u></a></p>
                     </div>
                 </div>
             </div>
