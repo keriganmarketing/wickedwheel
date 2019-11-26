@@ -4,7 +4,7 @@
             <img 
                 class="is-block" 
                 :src="photo.small" 
-                :alt="'Pwillys Instagram Photo ' + index" 
+                :alt="'Wicked Wheel Instagram Photo ' + index" 
                 @click="toggleGallery(index)" 
             >
         </div>
@@ -12,7 +12,7 @@
             <div class="modal-background" @click="toggleGallery"></div>
             <div class="modal-content large" >
                 <div class="photo-holder" >
-                    <img :src="photos[currentPhoto].large" :alt="'Pwillys Instagram Photo '" >
+                    <img :src="photos[currentPhoto].large" :alt="'Wicked Wheel Instagram Photo '" >
                 </div>
                 <div class="navigation columns is-mobile is-centered is-justified">
                     <div class="column is-narrow has-text-right"><a class="button is-primary tandelle" @click="previousPhoto">Previous</a></div>
