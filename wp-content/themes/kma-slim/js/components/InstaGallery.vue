@@ -1,6 +1,9 @@
 <template>
     <div class="columns is-multiline is-justified is-aligned is-mobile">
-        <div v-for="(photo, index) in photos" class="column is-4">
+        <div 
+            v-for="(photo, index) in photos" 
+            :key="photo.index" 
+            class="column is-4">
             <img 
                 class="is-block" 
                 :src="photo.small" 
