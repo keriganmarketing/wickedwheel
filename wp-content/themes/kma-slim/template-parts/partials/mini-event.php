@@ -11,6 +11,6 @@
             <p class="time"><?php echo $event['time']; ?></p>
             <p class="location"><?php echo $event['location']; ?></p>
         </div>
-        <a class="tile-link" href="<?= $event['link']; ?>" ></a>
+        <a class="tile-link" aria-label="Learn more about <?= $event['name']; ?>" href="<?= $event['link']; ?>" ></a>
     </div>
 </div>
