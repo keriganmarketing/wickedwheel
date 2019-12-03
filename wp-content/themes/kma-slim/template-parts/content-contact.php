@@ -53,6 +53,7 @@ include(locate_template('template-parts/sections/top.php'));
                             </div>
                         </div>
                     </div>
+                </div>
             </section>
         </article>
     </div>
