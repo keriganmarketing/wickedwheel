@@ -20,6 +20,7 @@ if($feed->posts){
             <div class="card-video">
                 <iframe
                         src="<?= $fbPost->link; ?>"
+                        title="video"
                         style="border:none;overflow:hidden"
                         scrolling="no"
                         frameborder="0"

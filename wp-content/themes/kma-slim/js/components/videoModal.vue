@@ -3,7 +3,7 @@
         <div class="modal-background" @click="toggleModal"></div>
         <div class="modal-content large">
             <div class="video-wrapper">
-            <iframe :src="'https://player.vimeo.com/video/' + this.$parent.vimeoCode + '?autoplay=1&portrait=0'" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe title="video" :src="'https://player.vimeo.com/video/' + this.$parent.vimeoCode + '?autoplay=1&portrait=0'" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
         </div>
         <button class="modal-close is-large" @click="toggleModal"></button>
