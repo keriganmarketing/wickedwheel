@@ -11,7 +11,7 @@
                     class="slide-image column is-12"
                     :style="'background-image: url(' + image + ')'"
                     >
-                    <img class="slide-image-shadow" src="/wp-content/themes/kma-slim/img/shadows.png" >
+                    <img alt="" class="slide-image-shadow" src="/wp-content/themes/kma-slim/img/shadows.png" >
                 </div>
             </div>
         </div>

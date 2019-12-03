@@ -30,7 +30,12 @@ use Includes\Modules\Helpers\PageField;
                             $socialIcons = $socialLinks->getSocialLinks('svg', 'circle');
                             if (is_array($socialIcons)) {
                                 foreach ($socialIcons as $socialId => $socialLink) {
-                                    echo '<a class="' . $socialId . '" href="' . $socialLink[0] . '" target="_blank" >' . $socialLink[1] . '</a>';
+                                    echo '<a 
+                                        class="' . $socialId . '" 
+                                        href="' . $socialLink[0] . '" 
+                                        target="_blank" 
+                                        aria-label="follow us on ' . $socialId .'"
+                                    >' . $socialLink[1] . '</a>';
                                 }
                             }
                             ?>
