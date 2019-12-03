@@ -7,9 +7,11 @@
                 <div class="column is-12-mobile is-1-desktop">
                     <slot></slot>
                 </div>
-                <div class="slide-image column is-12" >
+                <div 
+                    class="slide-image column is-12"
+                    :style="'background-image: url(' + image + ')'"
+                    >
                     <img class="slide-image-shadow" src="/wp-content/themes/kma-slim/img/shadows.png" >
-                    <img :src="image" >
                 </div>
             </div>
         </div>
@@ -22,12 +24,12 @@
         props: {
             image: {
                 type: String,
-                default: this.image,
+                default: null,
                 required: true
             },
             id: {
                 type: Number,
-                default: this.id
+                default: null
             }
         },
 
@@ -49,11 +51,10 @@
 <style>
     .slide {
         width:100%;
-        -webkit-transition: all linear 1.5s;
-        transition: all linear 1.5s;
+        opacity: 0;
+        transition: opacity linear 1.5s;
         position: absolute;
         z-index: -1;
-        opacity: 0;
     }
     .slide.active {
         opacity: 1;
@@ -63,12 +64,15 @@
         align-items: center;
     }
     .slide-image-shadow {
-        position: absolute;
+        width: 100%;
+        height: 100%;
     }
     .slide-image {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         justify-content: flex-end;
+        background-position: center;
+        background-size: cover;
     }
 </style>
