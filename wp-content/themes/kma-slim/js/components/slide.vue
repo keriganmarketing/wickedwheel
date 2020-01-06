@@ -56,6 +56,7 @@
         position: absolute;
         z-index: -1;
     }
+
     .slide.active {
         opacity: 1;
         z-index: 0;
@@ -74,5 +75,18 @@
         justify-content: flex-end;
         background-position: center;
         background-size: cover;
+        height: 200px;
+    }
+
+    @media screen and (min-width: 576px) {
+        .slide-image {
+            height: 300px;
+        }
+    }
+
+    @media screen and (min-width: 783px) {
+        .slide-image {
+            height: auto;
+        }
     }
 </style>
