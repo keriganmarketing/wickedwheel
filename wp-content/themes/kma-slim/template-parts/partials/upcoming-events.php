@@ -4,8 +4,7 @@ use Includes\Modules\Events\Events;
 
 $events      = new Events();
 $eventsArray = $events->getHomePageEvents(4);
-
-if (count($eventsArray) > 1) { ?>
+if (is_array($eventsArray) && count($eventsArray) > 1) { ?>
     <div class="next-event-large">
         <div class="tire-texture"></div>
         <div class="container">
