@@ -371,7 +371,7 @@ class Events
 
         $metaQuery   = array_merge($metaQuery, $args);
         $outputArray = $this->getEvents($metaQuery, $category, $limit);
-        if(count($outputArray) > 0) {
+        if(is_array($outputArray) && count($outputArray) > 0) {
             foreach ($outputArray as $key => $var) {
                 if ($var['start'] < $today + 1) {
                     $outputArray[$key]['start'] = $this->advanceDate($var);
