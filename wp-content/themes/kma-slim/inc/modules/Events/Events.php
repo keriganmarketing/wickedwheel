@@ -215,6 +215,8 @@ class Events
 
         $postList = get_posts($request);
 
+        $outputArray = [];
+        
         foreach ($postList as $post) {
             $recurrDays = [
                 'monday'    => (isset($post->recurring_settings_monday) ? $post->recurring_settings_monday : null),
