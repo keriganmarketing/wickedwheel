@@ -341,19 +341,19 @@
         "source": {
             "type": "git",
             "url": "https://github.com/kerigansolutions/fb-autoblog-wp.git",
-            "reference": "f228d994648cd47553ac9c07fc50ba0267e583a2"
+            "reference": "bb40187aabdb1293eab892429fa463a41a69ead1"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/f228d994648cd47553ac9c07fc50ba0267e583a2",
-            "reference": "f228d994648cd47553ac9c07fc50ba0267e583a2",
+            "url": "https://api.github.com/repos/kerigansolutions/fb-autoblog-wp/zipball/bb40187aabdb1293eab892429fa463a41a69ead1",
+            "reference": "bb40187aabdb1293eab892429fa463a41a69ead1",
             "shasum": ""
         },
         "require": {
             "guzzlehttp/guzzle": "^6.3",
             "nesbot/carbon": "^1.22"
         },
-        "time": "2018-06-07T20:56:20+00:00",
+        "time": "2020-07-02T22:21:55+00:00",
         "type": "library",
         "installation-source": "source",
         "autoload": {
