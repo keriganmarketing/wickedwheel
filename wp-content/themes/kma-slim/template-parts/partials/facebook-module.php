@@ -14,12 +14,12 @@ if(count($feed) > 0){
 ?>
     <div class="card social-module facebook has-text-centered <?= ($hasImage == true ? 'has-image' : 'no-image'); ?>">
         <?php if ($hasImage == true) { ?>
-            <div class="card-image">
+            <div class="card-image" tabindex="0">
                 <img src="<?= $fbPost->full_image_url; ?>">
             </div>
         <?php } ?>
         <?php if ($isVideo == true) { ?>
-            <div class="card-video">
+            <div class="card-video" tabindex="0">
                 <iframe
                         src="<?= $fbPost->video_url; ?>"
                         style="border:none;overflow:hidden"
@@ -32,7 +32,7 @@ if(count($feed) > 0){
                 </iframe>
             </div>
         <?php } ?>
-        <div class="card-content">
+        <div class="card-content" tabindex="0">
             <p class="post-text"><?= $fbPost->post_content; ?></p>
             <p class="posted-on">Posted on <?= $date; ?></p>
         </div>
