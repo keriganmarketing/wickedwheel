@@ -5,7 +5,7 @@
             <img src="<?= $event['photo']; ?>" alt="<?= $event['name']; ?>">
             </a>
         </div>
-        <div class="card-content">
+        <div class="card-content" tabindex="0">
             <h3 class="title is-3 tandelle is-primary"><?= $event['name']; ?></h3>
             <p class="date"><?= $event['recurr_readable']; ?></p>
             <p class="time"><?php echo $event['time']; ?></p>
