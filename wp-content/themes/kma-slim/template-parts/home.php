@@ -15,7 +15,7 @@ include(locate_template('template-parts/sections/top.php'));
     <?php include(locate_template('template-parts/sections/home-header.php')); ?>
     <?php include(locate_template('template-parts/partials/upcoming-events.php')); ?>
     <div class="container">
-        <div class="entry-content content has-text-centered">
+        <div class="entry-content content has-text-centered" tabindex="0">
             <h1 class="title is-1 tandelle is-primary"><?php echo $headline; ?></h1>
             <?php echo ($subhead!='' ? '<p class="subtitle">'.$subhead.'</p>' : null); ?>
             <?php the_content(); ?>
