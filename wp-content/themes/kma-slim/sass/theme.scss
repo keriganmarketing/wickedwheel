@@ -973,3 +973,10 @@ h1.title {
     }
   }
 }
+
+//Adding focus attributes for ADA.
+.button:focus {
+  background-color: #fff;
+  color: #c5ad5f !important;
+  border:5px solid #c5ad5f;
+}
