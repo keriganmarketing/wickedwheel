@@ -51,6 +51,12 @@ use Includes\Modules\Helpers\PageField;
                                 |
                             </div>
                             <div class="navbar-item is-hidden-touch">
+                                <a href="/things-to-do/">Things To Do</a>
+                            </div>
+                            <div class="navbar-item separator is-hidden-touch">
+                                |
+                            </div>
+                            <div class="navbar-item is-hidden-touch">
                                 <a href="/contact/">Contact</a>
                             </div>
                             <div class="navbar-item top-phone">
