@@ -505,7 +505,7 @@ h1.title {
 
       h2.title {
         @media screen and (min-width: $widescreen){
-          font-size: 3.0rem;
+          font-size: 4.0rem;
         }
       }
 
@@ -686,7 +686,7 @@ h1.title {
       border: 1px solid $primary;
       background-color: #FFF;
       width: 100%;
-
+    
       @media screen and (min-width: $tablet) {
         display: flex;
         flex-direction: column;
@@ -760,7 +760,7 @@ h1.title {
         width: 100% !important;
 
         @media screen and (min-width: $tablet) {
-          width: 365px !important;
+          width: 360px !important;
         }
       }
     }
