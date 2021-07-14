@@ -15,7 +15,7 @@ if(count($feed) > 0){
     <div class="card social-module facebook has-text-centered <?= ($hasImage == true ? 'has-image' : 'no-image'); ?>">
         <?php if ($hasImage == true) { ?>
             <div class="card-image">
-                <img src="<?= $fbPost->full_image_url; ?>">
+                <img src="<?= $fbPost->full_image_url; ?>" alt="Our Facebook Latest Post">
             </div>
         <?php } ?>
         <?php if ($isVideo == true) { ?>
