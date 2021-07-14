@@ -1,6 +1,12 @@
 
 <div class="container has-text-centered">
-    <p class="copyright">&copy;<?php echo date('Y'); ?> <?php echo get_bloginfo(); ?>. All&nbsp;Rights&nbsp;Reserved.
+    <p class="copyright">&copy;<?php echo date('Y'); ?> <?php echo get_bloginfo(); ?>. All&nbsp;Rights&nbsp;Reserved. &nbsp;
+        <span class="d-block d-sm-inline-block py-2 py-md-0 pl-md-3">
+            |&nbsp;&nbsp;
+            </span>
+            <span class="d-block d-sm-inline-block py-2 py-md-0 pl-md-3">
+                <a class="text-white" href="/sitemap_index.xml" target="_blank" rel="noreferrer">Sitemap</a>
+        </span>&nbsp;
         <span class="siteby">
             <svg version="1.1" id="kma" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" height="14" width="20"
