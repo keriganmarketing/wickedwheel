@@ -10,3 +10,4 @@ wp-content/themes/kma-slim/node_modules/**
 wp-content/themes/kma-slim/vendor/**
 wp-content/plugins/**
 wp-content/uploads/**
+dbs

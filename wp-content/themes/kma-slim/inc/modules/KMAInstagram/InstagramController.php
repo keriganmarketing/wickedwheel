@@ -60,7 +60,7 @@ class InstagramController
             $response = $client->request('GET',
             'https://graph.facebook.com/v7.0/' . $this->userID . '/media?' . 
             'access_token=' . $this->accessToken . 
-            '&fields=media_url,permalink,like_count,comments_count' );
+            '&fields=media_url,permalink,like_count,comments_count,media_type,thumbnail_url' );
 
         } catch (RequestException $e) {
             if ($e->hasResponse()) {
@@ -68,7 +68,7 @@ class InstagramController
             }
         }
 
-        if($response){
+        if(isset($response)){
             return $response;
         }else{
             return false;
@@ -127,14 +127,16 @@ class InstagramController
         register_rest_route( 'kerigansolutions/v1', '/instagallerytoken',
             [
                 'methods'  => 'GET',
-                'callback' => [ $this, 'exchangeToken' ]
+                'callback' => [ $this, 'exchangeToken' ],
+                'permission_callback'  => '__return_true'
             ]
         );
 
         register_rest_route( 'kerigansolutions/v1', '/instagramdata',
             [
                 'methods'  => 'GET',
-                'callback' => [ $this, 'getInstagramData' ]
+                'callback' => [ $this, 'getInstagramData' ],
+                'permission_callback'  => '__return_true'
             ]
         );
     }
