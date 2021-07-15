@@ -43,7 +43,7 @@ if(count($feed) > 0){
                     <img src="<?php echo $fbPost->full_image_url; ?>" alt="Image shared from Facebook">
                     <?php if($fbPost->url != ''){ ?>
                         </a>
-                    <?php } ?>
+                    <?php } ?> 
                 </div>
             <?php } ?>
 
