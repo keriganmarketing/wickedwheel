@@ -736,7 +736,8 @@ h1.title {
           display: block;
         }
         .posted-on {
-          color: $grey;
+          color: $black;
+          font-style: italic;
           font-size: .9em;
         }
       }
