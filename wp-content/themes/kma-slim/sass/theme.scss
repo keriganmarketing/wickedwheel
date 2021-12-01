@@ -197,6 +197,10 @@ body {
       a {
         color: #D2CAB0;
         text-transform: uppercase;
+
+        &:hover, &:focus {
+          color: #FFF;
+        }
       }
     }
 
@@ -242,6 +246,10 @@ body {
         font-family: "tandelle";
         text-transform: uppercase;
         color: #D2CAB0;
+
+        &:hover, &:focus {
+          color: #FFF;
+        }
       }
 
       .navbar-link::after {
@@ -274,11 +282,11 @@ body {
       justify-content: flex-end;
 
       .button {
-        height: 1.25em;
+        height: 1.35em;
         padding-left: .75em;
         padding-right: .75em;
         margin: 0 .5rem;
-        font-size: 1.5em;
+        font-size: 1.3em;
         font-weight: $weight-bold;
         text-transform: uppercase;
       }
@@ -777,7 +785,8 @@ h1.title {
           display: block;
         }
         .posted-on {
-          color: $grey;
+          color: $black;
+          font-style: italic;
           font-size: .9em;
         }
       }
@@ -806,8 +815,8 @@ h1.title {
       }
     }
 
-    .instagram {
-    }
+    // .instagram {
+    // }
 
     .tripadvisor {
       img {
@@ -892,7 +901,6 @@ h1.title {
 }
 
 #menu-footer-menu {
-  background-color: #c5ad5f;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -901,7 +909,11 @@ h1.title {
   text-transform: uppercase;
   list-style: none;
   flex-direction: column;
-  padding: .25rem 0;
+  background: rgb(221,191,96);
+  background: -moz-linear-gradient(139deg, rgba(221,191,96,1) 0%, rgba(171,151,85,1) 100%);
+  background: -webkit-linear-gradient(139deg, rgba(221,191,96,1) 0%, rgba(171,151,85,1) 100%);
+  background: linear-gradient(139deg, rgba(221,191,96,1) 0%, rgba(171,151,85,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ddbf60",endColorstr="#ab9755",GradientType=1);
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
@@ -911,7 +923,12 @@ h1.title {
     a {
       display: inline-block;
       padding: .5rem 1rem;
-      color: #ddd8cb;
+      color: #ffffff;
+      text-shadow: 1px 1px 0 rgba(0,0,0,.2);
+
+      &:hover, &:focus {
+        background-color: rgba(0,0,0,.2);
+      }
     }
   }
 }
@@ -955,10 +972,10 @@ h1.title {
 
 }
 
-///page CTA
-.page-cta {
+// ///page CTA
+// .page-cta {
 
-}
+// }
 
 @media screen and (min-width:$desktop) {
   .tire-texture {
@@ -989,7 +1006,6 @@ h1.title {
     box-shadow: 0 0 3px rgba(0,0,0,.4);
     position: absolute;
     margin: 5px;
-    width: 140px;
   }
 
   .footer-nav-menu {
