@@ -8,7 +8,7 @@
                 <?php include(locate_template('template-parts/partials/instagram-module.php')); ?>
             </div>
             <div class="column is-narrow-tablet is-one-third-fullhd " >
-                <?php include(locate_template('template-parts/partials/tripadvisor-module.php')); ?>
+                <?php include(locate_template('template-parts/partials/review-module.php')); ?>
             </div>
         </div>
     </div>

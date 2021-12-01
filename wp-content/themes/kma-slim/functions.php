@@ -7,6 +7,7 @@
  */
 
 use Includes\Modules\Events\Events;
+use Includes\Modules\Reviews\Reviews;
 use Includes\Modules\Slider\BulmaSlider;
 use Includes\Modules\Helpers\CleanWP;
 use Includes\Modules\Layouts\Layouts;
@@ -50,6 +51,9 @@ $facebook->use();
 
 $instagram = new InstagramController();
 $instagram->setupAdmin();
+
+$reviews = new Reviews();
+$reviews->setupAdmin();
 
 PageField::addField('Contact Info',[
 	'Phone number' => 'text',

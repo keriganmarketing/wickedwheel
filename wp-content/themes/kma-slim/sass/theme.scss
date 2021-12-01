@@ -685,6 +685,55 @@ h1.title {
     }
   }
 
+  .review {
+
+    .review-text {
+      font-size: 16px;
+      color: $dark;
+      line-height: 23px;
+    }
+
+    .review-author {
+      font-style: italic;
+      .name {
+        font-style: normal;
+        font-weight: $weight-bold;
+      }
+      .name::after {
+        content: ",";
+      }
+    }
+  }
+
+  .review.single {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .open-quote {
+      display: inline-block;
+      color: #c5ad5f;
+      font-family: Georgia, serif;
+      font-size: 72px;
+      font-style: normal;
+      font-stretch: normal;
+      font-weight: 700;
+      width: 60px;
+      padding-top: .25rem;
+    }
+    .review-author {
+      margin-top: 1rem;
+      line-height: 1.3em;
+
+      span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+
   .social-media-section {
     padding: 4rem 1rem;
     background: url("/wp-content/themes/kma-slim/img/asphalt.jpg") center #000;
