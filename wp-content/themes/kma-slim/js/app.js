@@ -14,6 +14,7 @@ import GoogleMapPin from './components/GoogleMapPin.vue';
 import InstaGallery from './components/InstaGallery.vue';
 import VueParallaxJs from 'vue-parallax-js';
 import {VueMasonryPlugin} from 'vue-masonry';
+import DonationForm from './components/DonationForm';
 
 window.Vue.use(VueParallaxJs, {
     minWidth: 1000,
@@ -35,7 +36,8 @@ let app = new Vue({
         'slide': slide,
         'google-map': GoogleMap,
         'pin': GoogleMapPin,
-        'insta-gallery': InstaGallery
+        'insta-gallery': InstaGallery,
+        'donations-form': DonationForm
     },
 
     data: {

@@ -32,6 +32,6 @@ for($i=0; $i<floor($feed['rating']); $i++){
         </div>
     </div>
     <div class="card-bottom">
-        <a class="button is-primary is-large is-rounded has-shadow" target="_blank" href="https://www.facebook.com/TheWickedWheel/reviews/">More Reviews on Facebook</a>
+        <a class="button is-primary is-large is-rounded has-shadow" target="_blank" href="https://www.facebook.com/TheWickedWheel/reviews/">More Reviews</a>
     </div>
 </div>

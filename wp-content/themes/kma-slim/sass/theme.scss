@@ -698,7 +698,6 @@ h1.title {
     .review-text {
       font-size: 16px;
       color: $dark;
-      line-height: 23px;
     }
 
     .review-author {
@@ -731,6 +730,12 @@ h1.title {
       width: 60px;
       padding-top: .25rem;
     }
+
+    .review-text {
+      font-size: 19px;
+      color: $dark;
+    }
+
     .review-author {
       margin-top: 1rem;
       line-height: 1.3em;
@@ -756,13 +761,24 @@ h1.title {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        min-height: 450px;
-        height: 450px;
         width: 366px;
       }
 
-      .card-bottom{
-        padding: 1rem .5rem;
+      @media screen and (min-width: $desktop) {
+        min-height: 450px;
+        height:100%;
+      }
+
+      .card-content {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .card-bottom {
+        text-align: center;
+        padding: 0 .5rem 1rem;
       }
     }
 
@@ -775,7 +791,7 @@ h1.title {
           display: flex;
           align-items: center;
           overflow: hidden;
-          max-height: 50%;
+          max-height: 70%;
         }
       }
 
@@ -783,11 +799,13 @@ h1.title {
         p {
           word-wrap: normal;
           display: block;
+          line-height: 26px;
         }
         .posted-on {
           color: $black;
           font-style: italic;
-          font-size: .9em;
+          margin-top: 10px;
+          font-size: 14px;
         }
       }
     }
@@ -815,21 +833,6 @@ h1.title {
       }
     }
 
-    // .instagram {
-    // }
-
-    .tripadvisor {
-      img {
-        display: block;
-      }
-      #CDSWIDSSP.widSSP {
-        width: 100% !important;
-
-        @media screen and (min-width: $tablet) {
-          width: 360px !important;
-        }
-      }
-    }
   }
 }
 

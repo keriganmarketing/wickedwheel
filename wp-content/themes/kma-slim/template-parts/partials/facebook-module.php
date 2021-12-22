@@ -17,10 +17,10 @@ if(count($feed) > 0){
     <div class="card social-module facebook has-text-centered <?php ($hasImage == true ? 'has-image' : 'no-image'); ?>" tabindex="0">
         <?php if($fbPost->media_type == 'video'){ ?>
             <div class="card-image">
-                <a target="_blank" href="<?php echo $fbPost->url; ?>" rel="noopener" >
+                <a target="_blank" href="<?php echo $fbPost->url; ?>" rel="noopener" class="is-block" >
                     <img 
                         src="<?php echo $fbPost->image_src; ?>" 
-                        alt="<?php echo wp_trim_words($fbPost->description, 20, '...'); ?>">
+                        alt="<?php echo wp_trim_words(($fbPost->description != '' ? $fbPost->description : 'Image posted on Facebook'), 20, '...'); ?>">
                 </a>
             </div>
 
@@ -43,13 +43,13 @@ if(count($feed) > 0){
                     <img src="<?php echo $fbPost->full_image_url; ?>" alt="Image shared from Facebook">
                     <?php if($fbPost->url != ''){ ?>
                         </a>
-                    <?php } ?> 
+                    <?php } ?>
                 </div>
             <?php } ?>
 
             <div class="card-content">
                 <?php if($fbPost->description != 'Click here to read more on Facebook') {?>
-                <p class="post-text"><?php echo wp_trim_words($fbPost->description, 25, '...'); ?></p>
+                <p class="post-text"><?php echo wp_trim_words($fbPost->description, 23, '...'); ?></p>
                 <?php } ?>
                 <p class="posted-on">Posted on <?php echo $date; ?></p>
             </div>
