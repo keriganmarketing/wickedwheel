@@ -37,7 +37,7 @@ use Includes\Modules\Helpers\PageField;
         'scrolling': isScrolling }
     ">
         <div id="top" class="header">
-        <div id="alert" style="background-color:#c5ad5f; text-align: center; color: #FFF; padding:.5rem;">
+        <div id="alert" style="background-color:#c5ad5f; text-align: center; color: #000000; padding:.5rem;">
         <p class="m-0">Merry Christmas and Happy Holidays! We are currently closed but will reopen December 26th at 11:00 am.</p>
         </div> 
             <div class="top-one">
@@ -52,6 +52,12 @@ use Includes\Modules\Helpers\PageField;
                             </div>
                             <div class="navbar-item is-hidden-touch">
                                 <a href="/things-to-do/">Things To Do</a>
+                            </div>
+                            <div class="navbar-item separator is-hidden-touch">
+                                |
+                            </div>
+                            <div class="navbar-item is-hidden-touch">
+                                <a href="/donations/">Donations</a>
                             </div>
                             <div class="navbar-item separator is-hidden-touch">
                                 |
