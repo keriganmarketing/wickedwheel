@@ -24,7 +24,7 @@ for($i=0; $i<floor($feed['rating']); $i++){
             <span class="open-quote">&ldquo;</span>
             <p class="review-text"><?= $feed['content']; ?>&rdquo;</p>
             <p class="review-author">
-                <span class="name">&mdash; <?= $feed['author']; ?></span>
+                <strong class="name">&mdash; <?= $feed['author']; ?></strong>
                 <span class="rating">rated <?= $stars; ?></span>
                 <span class="source">on <?= $feed['location']; ?></span>
                 <span class="when"><?= $when; ?></span>
