@@ -42,7 +42,7 @@ use Includes\Modules\Helpers\PageField;
                                 </div>
                             </div>
                             <div class="column is-4 has-text-centered">
-                                <a href="/contact/" class="button is-primary tandelle directions-button is-rounded has-shadow">Get Directions</a>
+                                <a href="https://www.google.com/maps/dir/29.9516777,-85.4236099/The+Wicked+Wheel+Bar+%26+Grill,+10025+Hutchison+Blvd,+Panama+City+Beach,+FL+32408" target="_blank" rel="noopener" class="button is-primary tandelle directions-button is-rounded has-shadow">Get Directions</a>
                                 <img src="<?php echo get_template_directory_uri() . '/img/map.png'; ?>"
                                     alt="Directions to The Wicked Wheel">
                             </div>
