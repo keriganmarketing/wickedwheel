@@ -8,10 +8,13 @@ use Includes\Modules\Reviews\Reviews;
 $reviews = new Reviews();
 $feed = $reviews->getRecentReview();
 
+if($feed){
+
 //echo '<pre>',print_r($feed),'</pre>';
 
 $when = human_time_diff(strtotime($feed['date'])) . ' ago';
 $stars = '';
+
 for($i=0; $i<floor($feed['rating']); $i++){
     $stars .= '<span class="icon is-small">
                 <i class="fa fa-star" aria-hidden="true"></i>
@@ -35,3 +38,5 @@ for($i=0; $i<floor($feed['rating']); $i++){
         <a class="button is-primary is-large is-rounded has-shadow" target="_blank" href="https://www.facebook.com/TheWickedWheel/reviews/">More Reviews</a>
     </div>
 </div>
+
+<?php } ?>

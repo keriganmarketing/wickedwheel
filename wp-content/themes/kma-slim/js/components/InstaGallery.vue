@@ -5,19 +5,37 @@
             :key="photo.index"
             class="column is-4">
             <figure class="image is-square photo-tile" >
-            <img 
-                class="photo-thumb" 
-                :src="photo.media_url" 
-                :alt="'Pwillys Instagram Photo ' + index"
-                @click="toggleGallery(index)" 
-            >
+                <img 
+                    v-if="photo.media_type == 'IMAGE'"
+                    class="photo-thumb" 
+                    :src="photo.media_url" 
+                    :alt="'Wicked Wheel Instagram Photo ' + index"
+                    @click="toggleGallery(index)" 
+                >
+                    <img 
+                    v-if="photo.media_type == 'VIDEO'"
+                    class="photo-thumb" 
+                    :src="photo.thumbnail_url" 
+                    :alt="'Wicked Wheel Instagram Video ' + index"
+                    @click="toggleGallery(index)" 
+                >
             </figure>
         </div>
         <div class="modal is-active" v-if="showModal">
             <div class="modal-background" @click="toggleGallery"></div>
             <div class="modal-content large" >
                 <div class="photo-holder" >
-                    <img :src="photos[currentPhoto].media_url" :alt="'Pwillys Instagram Photo '" >
+                    <img 
+                        v-if="photos[currentPhoto].media_type == 'IMAGE'"
+                        :src="photos[currentPhoto].media_url" 
+                        :alt="'Wicked Wheel Instagram Photo '" 
+                    >
+                    <iframe  
+                        v-if="photos[currentPhoto].media_type == 'VIDEO'"
+                        :src="photos[currentPhoto].media_url" 
+                        height="100%" 
+                        width="100%" 
+                    />
                 </div>
                 <div class="navigation columns is-mobile is-centered is-justified">
                     <div class="column is-narrow has-text-right"><a class="button is-primary tandelle" @click="previousPhoto">Previous</a></div>

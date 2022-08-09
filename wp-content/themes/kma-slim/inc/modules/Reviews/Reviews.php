@@ -154,7 +154,11 @@ class Reviews
             'posts_per_page' => 1
         ]);
 
-        return $request[0];
+        if(isset($request[0])){
+            return $request[0];
+        } else {
+            return false;
+        }
     }
 
     public function getReviews($args = [])
