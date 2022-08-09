@@ -37,9 +37,9 @@ use Includes\Modules\Helpers\PageField;
         'scrolling': isScrolling }
     ">
         <div id="top" class="header">
-        <div id="alert" style="background-color:#c5ad5f; text-align: center; color: #000000; padding:.5rem;">
+        <!-- <div id="alert" style="background-color:#c5ad5f; text-align: center; color: #000000; padding:.5rem;">
         <p class="m-0">Merry Christmas and Happy Holidays! We are currently closed but will reopen December 26th at 11:00 am.</p>
-        </div> 
+        </div>  -->
             <div class="top-one">
                 <div class="container">
                     <nav class="navbar navbar-top-row">
