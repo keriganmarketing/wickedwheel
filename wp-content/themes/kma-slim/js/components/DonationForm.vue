@@ -222,7 +222,7 @@
             class="input select"
             required
           >
-            <option value="entres">Entres</option>
+            <option value="entres">Entrees</option>
             <option value="sandwiches">Sandwiches</option>
             <option value="appetizers">Appetizers</option>
           </select>
