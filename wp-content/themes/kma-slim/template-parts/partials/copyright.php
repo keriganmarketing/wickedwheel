@@ -1,6 +1,6 @@
 
 <div class="container has-text-centered">
-    <p class="copyright">&copy;<?php echo date('Y'); ?> <?php echo get_bloginfo(); ?>. All&nbsp;Rights&nbsp;Reserved. &nbsp;
+    <p tabindex="0" class="copyright">&copy;<?php echo date('Y'); ?> <?php echo get_bloginfo(); ?>. All&nbsp;Rights&nbsp;Reserved. &nbsp;
         <span class="d-block d-sm-inline-block py-2 py-md-0 pl-md-3">
             |&nbsp;&nbsp;
             </span>
