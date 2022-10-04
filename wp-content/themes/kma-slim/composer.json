@@ -9,9 +9,7 @@
   },
   "require": {
     "kerigansolutions/cpt": "^0.2.0",
-    "kerigansolutions/fb-autoblog-wp": "^1",
-    "kevinrob/guzzle-cache-middleware": "^3.3",
-    "symfony/cache": "^5.1",
-    "google/recaptcha": "^1.2"
+    "kerigansolutions/fb-autoblog-wp": "^2",
+    "kevinrob/guzzle-cache-middleware": "^3.3"
   }
 }

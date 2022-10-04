@@ -14,7 +14,6 @@ use Includes\Modules\Layouts\Layouts;
 use Includes\Modules\Helpers\PageField;
 use Includes\Modules\Leads\SimpleContact;
 use Includes\Modules\Social\SocialSettingsPage;
-use Includes\Modules\KMAFacebook\FacebookController;
 use Includes\Modules\KMAInstagram\InstagramController;
 use Includes\Modules\Forms\Donations;
 
@@ -47,8 +46,7 @@ $events->setupAdmin();
 $ourMenu = new Menu();
 $ourMenu->setupAdmin();
 
-$facebook = new FacebookController();
-$facebook->use();
+(new KeriganSolutions\FacebookFeed\WP\Admin())->use();
 
 $instagram = new InstagramController();
 $instagram->setupAdmin();
