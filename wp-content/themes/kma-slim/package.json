@@ -23,7 +23,7 @@
     "sass": "^1.23.7",
     "sass-loader": "^7.3.1",
     "vue": "^2.6.10",
-    "vue-masonry": "^0.10.17",
+    "vue-masonry": "^0.16.0",
     "vue-parallax-js": "0.0.5",
     "vue-template-compiler": "^2.6.10"
   },
