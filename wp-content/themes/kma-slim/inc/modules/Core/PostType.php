@@ -124,7 +124,6 @@ class PostType
             'has_archive' => $this->archiveSlug,
             'rewrite' => [
                 'slug' => $this->queryvar,
-                'ep_mask' => $this->queryvar,
             ],
             'query_var' => $this->postType,
             'menu_icon' => 'dashicons-' . $this->menuIcon,
