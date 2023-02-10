@@ -48,8 +48,8 @@ use Includes\Modules\Helpers\PageField;
                             </div>
                             <div class="column is-4 footer-partners" tabindex="0">
                                 <p class="while-youre-here">While you're in town, visit</p>
-                                <a href="https://pwillys.com" target="_blank"><img src="<?php echo get_template_directory_uri() . '/img/pwillys-logo.png'; ?>"
-                                                                                alt="Pineapple Willy's"></a>
+                                <p><a href="https://pwillys.com" target="_blank"><img src="<?php echo get_template_directory_uri() . '/img/pwillys-logo.png'; ?>"
+                                                                                alt="Pineapple Willy's"></a></p>
                                 <p class="visit-website"><a href="https://pwillys.com" target="_blank"><u>visit PWilly's website.</u></a></p>
                             </div>
                         </div>
