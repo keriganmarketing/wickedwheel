@@ -46,7 +46,7 @@ class Form {
   ];
 
   // Email Fields
-  public $mailto = 'bryan@kerigan.com';
+  public $mailto = 'jared@pwillys.com';
   public $mailcc = '';
   public $mailbcc = 'websites@kerigan.com';
   public $mailfrom = 'noreply@mg.pwillys.com';

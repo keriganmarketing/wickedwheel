@@ -44,7 +44,7 @@ class Donations extends Form {
   public $restRoute = '/submit-donation-request';
 
   public $mailto = 'info@thewickedwheel.com';
-  public $mailcc = '';
+  public $mailcc = 'jared@pwillys.com';
   public $mailbcc = 'websites@kerigan.com';
   public $mailfrom = 'donations@mg.thewickedwheel.com';
   public $fromName = 'Wicked Wheel Donations';
