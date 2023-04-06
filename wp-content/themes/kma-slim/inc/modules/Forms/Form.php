@@ -46,11 +46,11 @@ class Form {
   ];
 
   // Email Fields
-  public $mailto = 'jared@pwillys.com';
-  public $mailcc = '';
+  public $mailto = 'info@thewickedwheel.com';
+  public $mailcc = 'jared@pwillys.com';
   public $mailbcc = 'websites@kerigan.com';
   public $mailfrom = 'noreply@mg.pwillys.com';
-  public $fromName = 'Pineapple Willy\'s';
+  public $fromName = 'The Wicked Wheel';
   public $primaryColor = '#B39E57';
   public $secondaryColor = '#202221';
   public $emailSubject = 'New Message From Website';
