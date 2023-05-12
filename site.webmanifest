@@ -1,0 +1,11 @@
+{
+  "name":"Wicked Wheel",
+  "short_name":"Wicked Wheel",
+  "icons":[
+    {"src":"/icons/icon_192.png","sizes":"192x192","type":"image/png"},
+    {"src":"/icons/icon_512.png","sizes":"512x512","type":"image/png"}
+  ],
+  "theme_color":"#202221",
+  "background_color":"#202221",
+  "display":"standalone"
+}
