@@ -90,7 +90,7 @@ use Includes\Modules\Helpers\PageField;
                     <nav class="navbar navbar-bottom-row">
                         <div class="navbar-brand">
                             <a href="/">
-                                <img class="logo" src="<?php echo get_template_directory_uri() . '/img/logo.png'; ?>"
+                                <img src="/icons/logo.svg" class="logo" style="width: 100%"
                                      alt="<?= bloginfo(); ?>">
                             </a>
                         </div>

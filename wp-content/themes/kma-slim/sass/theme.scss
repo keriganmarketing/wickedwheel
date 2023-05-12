@@ -233,7 +233,7 @@ body {
       .logo {
         transition: max-width linear .5s;
         display: block;
-        margin-top: -53px;
+        margin-top: -45px;
       }
     }
 
@@ -379,13 +379,13 @@ body {
 
 #top {
   .logo {
-    max-width: 125px;
+    max-width: 156px;
   }
 }
 
 .scrolling #top {
   .logo {
-    max-width: 125px;
+    max-width: 156px;
   }
 }
 
@@ -396,13 +396,14 @@ body {
         transition: max-width linear .5s;
         max-width: none;
         @media screen and (min-width: $tablet) {
-          max-width: 225px;
+          max-width: 260px;
+          margin-left: -25px;
         }
       }
     }
     .scrolling #top {
       .logo {
-        max-width: 125px;
+        max-width: 190px;
       }
     }
   }

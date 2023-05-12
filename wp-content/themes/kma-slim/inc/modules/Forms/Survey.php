@@ -22,8 +22,8 @@ class Appointment extends Form {
 
   public $restRoute = '/submit-survey-response';
 
-  public $mailto = 'bryan@kerigan.com';
-  public $mailcc = '';
+  public $mailto = 'info@thewickedwheel.com';
+  public $mailcc = 'jared@pwillys.com';
   public $mailbcc = 'websites@kerigan.com';
   public $mailfrom = 'surveys@mg.pwillys.com';
   public $fromName = 'Customer Care';
