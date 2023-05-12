@@ -19,7 +19,7 @@ use Includes\Modules\Helpers\PageField;
                     <div class="container">
                         <div class="columns is-multiline">
                             <div class="column is-4 has-text-centered">
-                                <img src="<?php echo get_template_directory_uri() . '/img/wings.png'; ?>"
+                                <img src="<?php echo get_template_directory_uri() . '/img/wings.svg'; ?>"
                                     alt="The Wicked Wheel">
                                 <p class="footer-phone has-text-centered"><a class="tandelle" href="tel:<?= PageField::getField('contact_info_phone_number', 58); ?>"><?= PageField::getField('contact_info_phone_number', 58); ?></a>
                                 </p>
