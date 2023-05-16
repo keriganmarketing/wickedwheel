@@ -95,7 +95,7 @@ class Leads
             $passCheck = false;
         }
 
-        if (function_exists('akismet_verify_key') && !empty(akismet_get_key())){
+        if (function_exists('akismet_http_post') && !empty(akismet_get_key())){
             if ($this->checkSpam($dataSubmitted)){
                 $passCheck = false;
             }
@@ -113,34 +113,35 @@ class Leads
 
         if (filter_var($client, FILTER_VALIDATE_IP)) {
             return $client;}
-        elseif (filter_var($forward, FILTER_VALIDATE_IP)) {
-            return $forward;}
+        elseif (filter_var($forwarded, FILTER_VALIDATE_IP)) {
+            return $forwarded;}
         else {
             return $remote;}
     } 
 
     public function checkSpam($dataSubmitted)
     {
-        $client = new \Gothick\AkismetClient\Client(
-            site_url(),           // Your website's URL (this becomes Akismet's "blog" parameter)
-            "KMA Spam Checker",   // Your website or app's name (Used in the User-Agent: header when talking to Akismet)
-            "1.0",                // Your website or app's software version (Used in the User-Agent: header when talking to Akismet)
-            akismet_get_key()     
-        );
+        global $akismet_api_host, $akismet_api_port;
 
-        $result = $client->commentCheck([
+        // construct the query string
+        $query_string = http_build_query( [
+            'blog'                 => site_url(),
+            'blog_lang'            => 'en_US',
+            'blog_charset'         => 'UTF-8',
             'user_ip'              => $dataSubmitted['ip_address'],
             'user_agent'           => $dataSubmitted['user_agent'],
             'referrer'             => $dataSubmitted['referrer'],
             'comment_author'       => $dataSubmitted['full_name'],
             'comment_author_email' => $dataSubmitted['email_address'],
-            'comment_content'      => $dataSubmitted['message']
-        ], $_SERVER);
+            'comment_content'      => $dataSubmitted['message'],
+            'is_test'              => TRUE,
+        ] );
 
-        $spam = $result->isSpam();
-        //echo '<pre>',print_r($result),'</pre>';
+        // post it to Akismet
+        $response = akismet_http_post( $query_string, $akismet_api_host, '/1.1/comment-check', $akismet_api_port );
 
-        return $spam; // Boolean 
+        // the result is the second item in the array, boolean
+        return $response[1] == 'true' ? true : false;
     }
 
     /**

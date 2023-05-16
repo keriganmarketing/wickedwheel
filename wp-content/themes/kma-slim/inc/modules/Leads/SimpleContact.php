@@ -19,9 +19,9 @@ class SimpleContact extends Leads
     protected function showForm()
     {
         $form = file_get_contents(locate_template('template-parts/forms/contact-form.php'));
-        $form = str_replace('{{user-agent}}', $_SERVER['HTTP_USER_AGENT'], $form);
+        $form = str_replace('{{user-agent}}', isset($_SERVER['HTTP_USER_AGENT']) ? $_SERVER['HTTP_USER_AGENT'] : '', $form);
 		$form = str_replace('{{ip-address}}', parent::getIP(), $form);
-        $form = str_replace('{{referrer}}', $_SERVER['HTTP_REFERER'], $form);
+        $form = str_replace('{{referrer}}', isset($_SERVER['HTTP_REFERER']) ? $_SERVER['HTTP_REFERER'] : '', $form);
         
         $formSubmitted = (isset($_POST['sec']) ? ($_POST['sec'] == '' ? true : false) : false );
         ob_start();

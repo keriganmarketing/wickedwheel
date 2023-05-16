@@ -1,7 +1,6 @@
 <div class="contact-form">
     <form method="post" >
-        <label class="sr-only" for="sec-form-code" >Security check (leave this blank)</label>
-        <input id="sec-form-code" type="text" name="sec" value="" class="sec-form-code" style="position: absolute; left:-10000px; top:-10000px; height:0px; width:0px;" >
+        <input id="sec-form-code" type="text" name="sec" value="" class="sec-form-code" style="position: absolute; left:-10000px; top:-10000px; height:0px; width:0px;" tabindex="-1" >
         <input type="hidden" name="user_agent" value="{{user-agent}}" >
         <input type="hidden" name="ip_address" value="{{ip-address}}" >
         <input type="hidden" name="referrer" value="{{referrer}}" >
