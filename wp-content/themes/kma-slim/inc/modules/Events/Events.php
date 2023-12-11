@@ -172,12 +172,12 @@ class Events
             }
 
             if ($end != null && $start != $end) {
-                $dateString .= (date('Ymd', $start) > date('Ymd') ? ' from ' . date('M j', strtotime($start)) . ' to ' : ' through ' ) . date('M j', strtotime($end));
+                $dateString .= (date('Ymd', strtotime($start)) > date('Ymd') ? ' <br> ' . date('M j', strtotime($start)) . ' to ' : ' through ' ) . date('M j', strtotime($end));
             }
         }else{
 
             if ($end != null && $start != $end) {
-                $dateString .= (date('Ymd', $start) > date('Ymd') ? date('M j, Y', strtotime($start)) . ' to ' : ' through ' ) . date('M j, Y', strtotime($end));
+                $dateString .= (date('Ymd', strtotime($start)) > date('Ymd') ? date('M j, Y', strtotime($start)) . ' to ' : ' through ' ) . date('M j, Y', strtotime($end));
             }else{
                 $dateString .= date('M j, Y', strtotime($start));
             }

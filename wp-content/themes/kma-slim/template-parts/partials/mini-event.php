@@ -1,4 +1,4 @@
-<div class="column is-3 is-variable">
+<div class="column is-4 is-variable">
     <div class="card has-text-centered">
         <div class="card-image">
             <a href="<?= $event['link']; ?>" >
